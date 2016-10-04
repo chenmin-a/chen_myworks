@@ -1,5 +1,4 @@
 # chen_myworks
-# Myworks
 创建key
 运行：
 $ ssh-keygen
