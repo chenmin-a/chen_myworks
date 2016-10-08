@@ -1,0 +1,25 @@
+{
+  "name": "chen_myworks",
+  "version": "1.0.0",
+  "description": "创建key\r 运行：\r $ ssh-keygen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenmin-a/chen_myworks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chenmin-a/chen_myworks/issues"
+  },
+  "homepage": "https://github.com/chenmin-a/chen_myworks#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "http-server": "^0.9.0",
+    "less": "^2.7.1"
+  }
+}
