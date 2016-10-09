@@ -1,0 +1,263 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>1号店首页</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/mbase.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript">
+        (function(designW){
+        	var prevScreenW=null;
+        	function resize(){
+        		var screenW=window.innerWidth;
+        		if(prevScreenW==screenW){
+        			return
+        		}else{
+        			prevScreenW=screenW
+        		}
+        		document.documentElement.style.fontSize=100*screenW/designW+"px"
+        	}
+        	window.onresize=function(){resize()};
+        	resize();
+        	window.onload=function(){resize()}
+        })(750);
+    </script>
+</head>
+<body>
+    <div class="top">
+        <div class="logo"></div>
+        <div class="city">江西</div>
+        <div class="search">
+            <i class="seach"></i>
+            <input type="text" value="" placeholder="搜索你想找的商品">
+        </div>
+        <div class="fenlei">
+            <a href="javascript:;">
+                <i class="fl"></i>
+                <span class="icon-txt">分类</span>
+            </a>
+        </div>
+        <div class="gwc">
+            <a href="javascript:;">
+                <i class="sc"></i>
+                <span class="icon-txt">购物车</span>
+            </a>
+        </div>
+    </div>
+    <!-- banner结构  Swiper -->
+     <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" data-hash="slide1"><img src="img/banner1.jpg" alt=""></div>
+            <div class="swiper-slide" data-hash="slide2"><img src="img/banner2.jpg" alt=""></div>
+            <div class="swiper-slide" data-hash="slide3"><img src="img/banner3.jpg" alt=""></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!--导航结构-->
+    <div class="nav">
+        <ul>
+            <li><a href="javascript:;">
+                <img src="img/nav01.png" alt=""/>
+                <span class="nav-txt">1号团</span>
+                <span class="hot">包邮区</span>
+            </a>
+            </li>
+            <li><a href="javascript:;">
+                <img src="img/nav02.png" alt=""/>
+                <span class="nav-txt">充值中心</span>
+            </a>
+            </li>
+            <li><a href="javascript:;">
+                <img src="img/nav03.png" alt=""/>
+                <span class="nav-txt">1件包邮</span>
+            </a>
+            </li>
+            <li><a href="javascript:;">
+                <img src="img/nav04.png" alt=""/>
+                <span class="nav-txt">活色生鲜</span>
+                <span class="hot">9.9蟹</span>
+            </a>
+            </li>
+            <li><a href="javascript:;">
+                <img src="img/nav05.png" alt=""/>
+                <span class="nav-txt">进口美食</span>
+                <span class="hot">减100</span>
+            </a>
+            </li>
+        </ul>
+        <ul>
+            <li><a href="javascript:;">
+                <img src="img/nav06.png" alt=""/>
+                <span class="nav-txt">1号闪购</span>
+            </a>
+            </li>
+            <li><a href="javascript:;">
+                <img src="img/nav07.png" alt=""/>
+                <span class="nav-txt">1号商城</span>
+            </a>
+            </li>
+            <li><a href="javascript:;">
+                <img src="img/nav08.png" alt=""/>
+                <span class="nav-txt">1号海购</span>
+            </a>
+            </li>
+            <li><a href="javascript:;">
+                <img src="img/nav09.png" alt=""/>
+                <span class="nav-txt">新品试用</span>
+            </a>
+            </li>
+            <li><a href="javascript:;">
+                <img src="img/nav10.png" alt=""/>
+                <span class="nav-txt">我的1号店</span>
+            </a>
+            </li>
+        </ul>
+    </div>
+    <!--广告部分1-->
+    <div class="ad">
+        <a href="javascript:;"><img src="img/ad.png" alt=""/></a>
+    </div>
+    <!--今日剁手价结构-->
+    <div class="low-price">
+        <div class="low-pri-hd hd">
+            <h3 class="title">今日剁手价</h3>
+            <div class="time time1">
+                <EM>还剩 </EM>
+                <span class="hour">10</span>
+                <span class="dot">:</span>
+                <span class="minute">00</span>
+                <span class="dot">:</span>
+                <span class="seconds">00</span>
+            </div>
+            <a class="qiang" href="javascript:;">特价疯抢<i class="sj"></i></a>
+        </div>
+        <div class="low-pri-bd">
+            <ul>
+                <li>
+                    <a href="javascript:;"><img src="img/img.png" alt=""/>
+                        <h4>百草味 坚果干果 礼盒 喜团圆大礼</h4>
+                        <span class="l">￥69</span>
+                        <span class="r">￥226.9<i class="icon"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="img/img2.png" alt=""/>
+                        <h4>百草味 坚果干果 礼盒 喜团圆大礼</h4>
+                        <span class="l">￥69</span>
+                        <span class="r">￥226.9<i class="icon"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="img/img.png" alt=""/>
+                        <h4>百草味 坚果干果 礼盒 喜团圆大礼</h4>
+                        <span class="l">￥69</span>
+                        <span class="r">￥226.9<i class="icon"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="img/img2.png" alt=""/>
+                        <h4>百草味 坚果干果 礼盒 喜团圆大礼</h4>
+                        <span class="l">￥69</span>
+                        <span class="r">￥226.9<i class="icon"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="img/img.png" alt=""/>
+                        <h4>百草味 坚果干果 礼盒 喜团圆大礼</h4>
+                        <span class="l">￥69</span>
+                        <span class="r">￥226.9<i class="icon"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="img/img2.png" alt=""/>
+                        <h4>百草味 坚果干果 礼盒 喜团圆大礼</h4>
+                        <span class="l">￥69</span>
+                        <span class="r">￥226.9<i class="icon"></i></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--广告部分2-->
+    <div class="ad">
+        <a href="javascript:;"><img src="img/ad2.png" alt=""/></a>
+    </div>
+    <!-- 今日秒杀-->
+    <div class="miao">
+        <div class="miaosha">
+            <div class="time time2">
+                还剩 <span class="hour">10</span>
+                <span class="dot">:</span>
+                <span class="minute">00</span>
+                <span class="dot">:</span>
+                <span class="seconds">00</span>
+            </div>
+            <a href="javascript:;"><img src="img/miao1.jpg" alt=""/></a>
+        </div>
+        <div class="kuanghuan"><a href="javascript:;"><img src="img/huan.jpg" alt=""/></a></div>
+        <div class="lianfan"><a href="javascript:;"><img src="img/fan.png" alt=""/></a></div>
+        <div class="rangli"><a href="javascript:;"><img src="img/li.jpg" alt=""/></a></div>
+    </div>
+    <!--三栏结构-->
+    <div class="info1">
+        <div class="info1-l"><a href="javascript:;"><img src="img/m2.jpg" alt=""/></a></div>
+        <div class="info1-c"><a href="javascript:;"><img src="img/m3.jpg" alt=""/></a></div>
+        <div class="info1-r"><a href="javascript:;"><img src="img/m4.jpg" alt=""/></a></div>
+    </div>
+        <!--广告部分3-->
+    <div class="ad">
+        <a href="javascript:;"><img src="img/ad3.jpg" alt=""/></a>
+    </div>
+<!--轧马路结构-->
+    <div class="yml">
+        <div class="yml-hd hd">
+            <h3 class="title">轧马路</h3>
+        </div>
+        <div class="yml-bd">
+            <ul>
+                <li><a href="javascript:;"><img src="img/tp.jpg" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="img/tp1.jpg" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="img/tp2.jpg" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="img/tp3.jpg" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="img/tp1.jpg" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="img/tp2.jpg" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="img/tp3.jpg" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="img/tp1.jpg" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="img/tp2.jpg" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="img/tp3.jpg" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="img/tp1.jpg" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="img/tp2.jpg" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="img/tp3.jpg" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="img/tp2.jpg" alt=""/></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--三栏结构-->
+    <div class="info1">
+        <div class="info1-l"><a href="javascript:;"><img src="img/m2.jpg" alt=""/></a></div>
+        <div class="info1-c"><a href="javascript:;"><img src="img/m3.jpg" alt=""/></a></div>
+        <div class="info1-r"><a href="javascript:;"><img src="img/m4.jpg" alt=""/></a></div>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+   <!--  Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: '.swiper-pagination',
+        spaceBetween: 0,
+        hashnav: true,
+    });
+    var mySwiper = new Swiper('.swiper-container',{
+        autoplay : 3000,
+        speed:300,
+    })
+    </script>
+</body>
+</html>

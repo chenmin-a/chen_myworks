@@ -1,0 +1,419 @@
+body{
+    background: #f5f5f5;}
+.top{
+	width: 7.1rem;
+	height: 0.8rem;
+	padding: 0.05rem 0.2rem 0 0.2rem;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 3;
+	background: #fff;
+	border-bottom: 1px solid #e5e5e5;
+}
+.top .logo{
+	width: 0.8rem;
+	height:0.8rem;
+	float: left;
+	background: url(../img/logo.png) 0 0 no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.top .city{
+	width: 1rem;
+	height: 0.8rem;
+	line-height:0.8rem;
+	text-align: center;
+	font-size: 0.28rem;
+	float: left;
+}
+.top .search{
+	width: 3.7rem;
+	height: 0.7rem;
+	float: left;
+	position: relative;
+}
+.top .search input{
+	width: 3.1rem;
+	height:  0.6rem;
+    margin-top: 0.05rem;
+	border: 1px solid #c6c6c6;
+	border-radius: 0.35rem;
+	float: left;
+	padding-left: 0.5rem;
+	font-size: 0.22rem;
+	outline: none;
+}
+.top i{
+	display: block;
+	width: 0.4rem;
+	height: 0.4rem;
+}
+.top .search i.seach{
+	background: url(../img/seach.png) 0 0 no-repeat;
+	-webkit-background-size: 90% 90%;
+	background-size: 90% 90%;
+    position: absolute;
+	top:0.18rem;
+	left: 0.08rem;
+}
+.top .fenlei,
+.top .gwc{
+	width: 0.8rem;
+	height: 100%;
+	float: left;
+}
+.top .gwc{float: right}
+.top .fenlei a,
+.top .gwc a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #ff4243;
+}
+.top .fenlei a i.fl,
+.top .gwc a i.sc{
+	background: url(../img/01.png) 0 0 no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+    margin-left: 0.2rem;
+}
+.top .gwc a i.sc{	background: url(../img/02.png) 0 0 no-repeat;-webkit-background-size: contain;background-size: contain;}
+.top .fenlei span.icon-txt,
+.top .gwc span.icon-txt{
+    display: block;
+    width:100%;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    font-size: 0.22rem;
+    text-align:  center;
+}
+/*banner结构样式*/
+.swiper-container {
+        width: 7.5rem;
+        height: 2.4rem;
+        margin-top: 0.8rem;
+}
+.swiper-slide {   
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide img{
+	width: 7.5rem;
+}
+/*圆点样式*/
+.swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    border-radius: 100%;
+    background: rgba(0,0,0,.5);
+    border: 1px solid #fff;
+}
+/*圆点当前颜色*/
+.swiper-pagination-bullet-active {
+    background: #fff;
+}
+/*nav导航样式*/
+.nav{
+    width: 7rem;
+    height: 3rem;
+    padding: 0.25rem 0.25rem 0;background: #fff;overflow: hidden;
+}
+.nav ul{
+    width: 100%;
+    height: 1.5rem;
+}
+.nav ul li{
+    width: 20%;
+    height: 1.5rem;float: left;
+    position: relative;
+}
+.nav ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.nav ul li a img{
+    display: block;
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.nav ul li a span.nav-txt{
+    display: block;
+    width: 100%;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    text-align: center;
+    font-size: 0.24rem;
+    color: #858585;
+}
+.nav ul li a span.hot{
+    display: block;
+    width: 0.9rem;
+    height: 0.3rem;
+    background: #ff3524;
+    border-radius: 0.15rem;
+    line-height: 0.25rem;
+    text-align: center;
+    font-size: 0.22rem;
+    color: #fff;
+    position: absolute;
+    top: -7px;
+    right: -10px;
+}
+.ad{
+    width: 7.1rem;
+    height: 1.5rem;
+    padding: 0.2rem;
+    border-bottom: 2px solid #e2e2e2;
+}
+.ad a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.ad a img{
+    display: block;
+    width: 100%;
+}
+/*今日剁手价结构样式*/
+.low-price{
+    width: 7.5rem;
+    height: 4.5rem;background: #fff;
+    border-bottom: 3px solid #e0e0e0;
+}
+.hd{
+    width: 100%;
+    height:0.7rem;
+    padding: 0.1rem 0;
+}
+.hd h3.title{
+    width:1.6rem;
+    height: 0.5rem;
+    padding-left: 0.2rem;
+    border-left: 2px solid #ff2e15;
+    font-size: 0.24rem;
+    line-height: 0.5rem;
+    color: #1d1d1d;
+    float: left;
+    background: pink;
+}
+ .time{
+    width: 3rem;
+    height: 0.5rem;
+    float: left;
+    font-size: 0.22rem;
+    line-height: 0.5rem;
+    color: #606980;
+     background: yellow;
+}
+.time span{
+    display: inline-block;
+    width: 0.45rem;
+    height: 0.45rem;
+    background: #5c5c5c;
+    border-radius: 0.11rem;
+    color: #FFFFFF;
+    text-align: center;
+}
+ .time span.dot{
+    display: inline-block;
+    width: 0.1rem;
+    font-weight: bold;
+    background:none;
+    color: #606980;font-size: 0.45rem;
+    text-align: center;
+}
+.low-price .low-pri-hd a.qiang{
+    display: block;
+    width: 1.4rem;
+    height: 0.5rem;
+    float: right;
+    line-height: 0.5rem;
+    font-size: 0.22rem;
+    background: #ff3c25;
+    border-radius: 1px;
+    color: #fff;text-align: center;
+    margin-right: 0.5rem;
+    position: relative;
+}
+.low-price .low-pri-hd a.qiang i.sj {
+    display: block;
+    width:0.5rem;
+    height: 0.5rem;
+    background: url("../img/sj.png") no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    right: -0.5rem;
+}
+.low-price .low-pri-bd{
+    width: 100%;
+    height: 3.4rem;overflow: hidden;
+}
+.low-price .low-pri-bd ul{
+    width: 99.99rem;
+    height: 100%;
+    overflow: hidden;
+}
+.low-price .low-pri-bd ul li{
+    width: 2.1rem;
+    height: 100%;
+    float: left;
+    padding: 0 0.20rem;
+    border-right: 1px solid #e5e5e5;
+}
+.low-price .low-pri-bd ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0.22rem;
+}
+.low-price .low-pri-bd ul li img{
+    width: 100%;
+    height: 50%;
+}
+.low-price .low-pri-bd ul li a h4{
+    display: block;
+    width: 100%;
+    height: 0.9rem;
+    overflow: hidden;
+    line-height: 0.4rem;
+    color: #777;
+    font-weight: normal;
+}
+.low-price .low-pri-bd ul li a span{
+    display: block;
+    width: 50%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    float: left;
+    color: #ff1c17;
+}
+.low-price .low-pri-bd ul li a span.r{
+    float: right;
+    color: #b5afae;
+    position: relative;
+}
+.low-price .low-pri-bd ul li a span.r i.icon{
+    display: block;
+    width:0.8rem;
+    height: 0.5rem;
+    background: url("../img/icon.png") no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    position: absolute;
+    top:  -0.1rem;
+    left: 0;
+}
+/*金牌秒杀*/
+.miao{
+    width: 7.5rem;
+    height: 4rem;
+    border-top: 1px solid #e7e7e7;
+    margin-top: 0.2rem;
+    border-bottom: 1px solid #e7e7e7;
+}
+.miao .miaosha{
+    width: 2.79rem;
+    height: 100%;
+    float: left;
+    border-right: 1px solid #e7e7e7;
+    position: relative;
+}
+.miao .miaosha a,.miao .kuanghuan a,.miao .lianfan a,.miao .rangli a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.miao .miaosha a img,.miao .kuanghuan a img,.miao .lianfan a img,.miao .rangli a img{
+     width: 100%;
+    height: 1.99rem;
+ }
+.miao .miaosha a img{    height: 4rem;}
+.miao .kuanghuan{
+    width: 4.6rem;
+    height: 1.99rem;
+    float: left;
+    border-bottom: 1px solid #e7e7e7;
+    background: pink;
+}
+.miao .lianfan{
+    width: 2.29rem;
+    height: 2rem;
+    float: left;
+    border-right: 1px solid #e7e7e7;
+}
+.miao .rangli{
+    width: 2.3rem;
+    height: 2rem;
+    float: left;
+}
+.miao .miaosha .time2{
+    width: 100%;
+    height: 0.5rem;
+    float: left;
+    font-size: 0.22rem;
+    line-height: 0.5rem;
+    color: #606980;
+    position: absolute;
+    top: 0.8rem;
+    left: 0.2rem;
+}
+.time2 span{ background: #e0e0e0; color: #525252;}
+.time2 span.dot{ color: #e0e0e0;}
+.info1{
+    width: 7.1rem;
+    height: 2.3rem;
+    margin-top: 0.2rem;
+    padding: 0 0.2rem;
+}
+.info1 .info1-l,.info1 .info1-c,.info1 .info1-r{
+    width: 2.29rem;
+    height: 2.29rem;
+    float: left;
+}
+.info1 .info1-c{ margin: 0 0.1rem;}
+.info1 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.info1 a img{    width: 100%;}
+/*轧马路结构样式*/
+.yml{    width: 7.5rem; margin-top: 0.2rem;}
+.yml .yml-bd{    width: 100%;overflow: hidden;zoom: 1;}
+.yml ul{width: 100%;}
+.yml ul li{
+    width: 33%;
+    height: 3rem;
+    float: left;
+    border-right: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+.yml ul li:nth-child(3n-1){ border-right: 0;}
+.yml ul li:first-child{  width: 66%;}
+.yml ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.yml ul li a img{
+    width: 100%;
+    height: 3rem;
+}
