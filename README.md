@@ -4,6 +4,10 @@
 $ ssh-keygen
 
 一般存放在(/c/Users/Administrator/.ssh/...）
-用编辑器打开
+
 id_rsa.pub
-粘贴到key处即可
+
+起服务:
+http-server
+
+浏览器直接打开端口 127.0.0.1:8080
