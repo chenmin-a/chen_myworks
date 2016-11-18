@@ -6,12 +6,12 @@
  
 2.克隆完毕 创建key
  $ ssh-keygen
+如果已经存在key 就不用再创建，直接按照下面步骤走：
 
-一般存放在(/c/Users/Administrator/.ssh/...）
-
-  id_rsa.pub 文件
+	key文件一般存放在(/c/Users/Administrator/.ssh/...）
+    id_rsa.pub 文件
   
-打开该文件将里面内容整体复制，然后打开github并添加到右上角头像 ——>  Settings ——> SSH and GPG keys ——> New SSH key
+	打开该文件将里面内容整体复制，然后打开github并添加到右上角头像 ——>  Settings ——> SSH and GPG keys ——> New SSH key
 
 3.配置sourceTree
 
