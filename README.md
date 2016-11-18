@@ -7,7 +7,7 @@ $ ssh-keygen
 
 id_rsa.pub
 
-起服务:
+启服务:
 http-server
 
 浏览器直接打开端口 127.0.0.1:8080
