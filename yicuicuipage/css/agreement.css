@@ -1,0 +1,47 @@
+.agreement {
+    width: 3.37rem;
+    background-color: #fff;
+    padding: 0.19rem;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.agreement h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.2rem;
+    margin-top: 0.1rem;
+    color: red;
+}
+.agreement p {
+    text-indent: 0.32rem;
+    margin-top: 0.05rem;
+    font-size: 0.14rem;
+}
+.agreement h3 {
+    font-weight: 700;
+    font-size: 0.16rem;
+    color: #000;
+    margin-top: 0.1rem;
+}
+.p1 u,.p3 u,.p5 u,.p8 u {
+    color: red;
+}
+.p4,.p5,.p6,.p7 {
+    font-style:italic;
+    font-weight: 700;
+}
+.agreement ul {
+    font-size: 0.14rem;
+    margin-left: 0.5rem;
+}
+.agreement input {
+    width: 1.2rem;
+    height: 0.4rem;
+    background-color: #339df5;
+    color: #ffffff;
+    font-size: 0.16rem;
+    border-radius: 2px;
+    margin: 0.3rem 1.05rem 0.3rem;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>易催催</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/fault.css"/>
+	<script type="text/javascript" src='../js/jquery-1.12.1.min.js'></script>
+    <script type="text/javascript" src='../js/page.js'></script>
+	<script type="text/javascript">
+	(function(designW){var prevScreenW = null;function resize(){var screenW = window.innerWidth;if (prevScreenW == screenW){return}else{prevScreenW = screenW}document.documentElement.style.fontSize = 100 * screenW / designW + "px"}window.onresize = function(){resize()};resize();window.onload = function(){resize()}})(375);
+
+	</script>
+</head>
+<body>
+	<div class="wrap">
+		<!-- 顶部 -->
+		<div class="top">
+			<div class="top-in">
+				<div class="top-l back-btn fl head-back"><a href="javascript:;"></a></div>
+				佣金说明
+			</div>
+		</div>
+		<div class="comm-direction">
+			<div class="staff-commission">
+				<div class="popup-txt">公司设置分配给员工的佣金比例（以100%为基准）</div>
+				<div class="comm-ratio">
+					<form id="form">
+						<div class="comm-ratiop">
+							员工：<input class="comm-ratio-num comm-ratio-num1" type="tel" id="employee" name="employee" placeholder="请输入1-100的数字"> %
+						</div>
+						<div class="comm-ratioc">
+							公司：<input class="comm-ratio-num comm-ratio-num2" type="tel" id="company" name="company" placeholder="70" disabled="disabled"> %
+						</div>
+					</form>
+				</div>
+				<div class="popup-txt">公司修改员工佣金比例，默认为下月生效。</div>
+			</div>
+			<div class="btns" id="btn">
+				<a href="javascript:;">确定</a>
+		    </div>
+		</div>	
+	</div>
+	<!--错误提示弹窗 B-->
+	<div class="fault">
+		<div class="fault-txt">
+			<div class="fault-txt-info">手机号码格式错误</div>
+			<input type="button" value="确认"/>
+		</div>
+	</div>
+	<!--错误提示弹窗 E-->
+</body>
+<script src="../js/commissionDirectionAjax.js"></script>
+<script>
+	var company = document.querySelector(".comm-ratio-num2");
+	var person = document.querySelector(".comm-ratio-num1");
+	person.onkeyup = function (){
+	    if(person.value > 100){
+	        person.value = "";
+	    }else{
+	        company.value = 100 - person.value;
+	    }
+	}
+	
+</script>
+</html>

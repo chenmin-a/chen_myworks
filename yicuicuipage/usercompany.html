@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <!--申明当前页面的编码集-->
+    <meta charset="UTF-8">
+    <!--网页标题-->
+    <title>易催催</title>
+    <!--网页关键词-->
+    <meta name="keywords" content="易催催" />
+    <!--网页描述-->
+    <meta name="description" content="" />
+    <!--适配当前屏幕-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!--禁止自动识别电话号码-->
+    <meta name="format-detection" content="telephone=no" />
+    <!--禁止自动识别邮箱-->
+    <meta content="email=no" name="format-detection" />
+    <!--iphone中safari私有meta标签,允许全屏模式浏览,隐藏浏览器导航栏-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!--iphone中safari顶端的状态条的样式black(黑色)-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/usercompany.css"/>
+    <link rel="stylesheet" href="css/fault.css"/>
+    <script>
+        (function (designW) {
+            var prevScreenW = null;
+
+            function resize() {
+                var screenW = window.innerWidth;
+                if (prevScreenW == screenW) {
+                    return
+                } else {
+                    prevScreenW = screenW
+                }
+                document.documentElement.style.fontSize = 100 * screenW / designW + "px"
+            }
+
+            window.onresize = function () {
+                resize()
+            };
+            resize();
+            window.onload = function () {
+                resize()
+            }
+        })(375);
+    </script>
+</head>
+<body>
+    <!--头部 B-->
+    <div class="head">
+        <div class="head-cancel1 head-back fl"></a></div>
+        <div class="head-info fl">添加公司信息</div>
+        <div class="head-alter fr"><a href="home.html"></a></div>
+    </div>
+    <!--头部 E-->
+
+    <!--添加公司信息 B-->
+    <div class="company">
+        <form id="form">
+            <input type="text" placeholder="请输入公司识别码(6位纯数字)" id="companyCode" name="companyCode"/><br/>
+            <input type="button" value="确定" id="btn"/>
+        </form>
+    </div>
+    <!--添加公司信息 E-->
+    <!--错误提示弹窗 B-->
+    <div class="fault">
+        <div class="fault-txt">
+            <div class="fault-txt-info">手机号码格式错误</div>
+            <input type="button" value="确认"/>
+        </div>
+    </div>
+    <!--错误提示弹窗 E-->
+    <!--确认加入或者取消加入公司 B-->
+    <div class="or">
+        <div class="or-txt">
+            <div class="or-txt-info clearfix">手机号码格式错误</div>
+            <input type="button" value="取消加入" class="or-txt-info-no fl"/>
+            <input type="button" value="确认加入" class="or-txt-info-yes fr"/>
+        </div>
+    </div>
+    <!--确认加入或者取消加入公司 E-->
+</body>
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/home.js"></script>
+<script src="js/usercompanyAjax.js"></script>
+</html>

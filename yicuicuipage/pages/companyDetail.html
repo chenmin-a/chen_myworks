@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>易催催</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/style.css">
+		<script type="text/javascript" src="../js/jquery-1.12.1.min.js"></script>
+	<script type="text/javascript" src="../js/page.js"></script>
+	<script type="text/javascript">
+	(function(designW){var prevScreenW = null;function resize(){var screenW = window.innerWidth;if (prevScreenW == screenW){return}else{prevScreenW = screenW}document.documentElement.style.fontSize = 100 * screenW / designW + "px"}window.onresize = function(){resize()};resize();window.onload = function(){resize()}})(375);
+	</script>
+</head>
+<body>
+	<div class="wrap">
+	<!-- 顶部 -->
+		<div class="com-info-hd">
+		<div class="top com-top">
+			<div class="top-in">
+				<div class="top-l fl head-back"><a href="javascript:;"></a></div>
+				公司信息
+				<div class="top-r fr"><a href="_index.html"></a></div>
+			</div>
+		</div>
+		<div class="staff-detail com-detail">
+			<div class="staff-img2 fl"><a href="../userphoto.html"><img src="../img/big-touxiang.png"></a></div>
+			<div class="staff-info2 fl">
+				<p class="staff-name2">上海XXXX公司</p>
+				<p class="staff-phone2"><span>周颖</span><i class="icon-phone"></i>13900138422</p>
+			</div>
+		</div>
+		</div>
+		<div class="com-info-bd">
+			<i class="icon-bg"></i>
+			<div class="com-info-bd-top">
+				<div class="com-code">企业识别码：<span>123456</span></div>
+				<div class="com-staff">企业员工：<span class="b-word">12</span>人</div>
+
+			</div>
+			<dl class="com-info-bd-btm clearfix">
+				<dt>累计佣金：<span class="r-word">30000.00</span>元</dt>
+				<dd>案子总数：<span class="b-word">6</span>单</dd>
+				<dd>待分配：<span class="b-word">6</span>单</dd>
+				<dd>进行中：<span class="b-word">6</span>单</dd>
+				<dd>已完成：<span class="b-word">6</span>单</dd>
+			</dl>
+		</div>
+	</div>
+</body>
+</html>

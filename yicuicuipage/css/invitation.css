@@ -1,0 +1,77 @@
+/*邀请详情 B*/
+.invitation {
+    width: 3.75rem;
+    height: 6.27rem;
+    background: url("../images/icon-invitation.png") no-repeat;
+    background-size: contain;
+}
+.invitation-head {
+    padding: 0.1rem 0.16rem 0 0.21rem;
+}
+.invitation-head div:first-child {
+    width: 0.24rem;
+    height: 0.24rem;
+    float: left;
+}
+.invitation-head div:last-child {
+    width: 0.6rem;
+    height: 0.24rem;
+    float: right;
+}
+.invitation-head-right a {
+    display: inline-block;
+    width: 0.6rem;
+    height: 0.24rem;
+}
+.invitation-info {
+    margin: 0.7rem 0 0 0.45rem;
+    font-size: 0.16rem;
+    color: #5a667c;
+}
+.invitation-info ul li {
+    margin-bottom: 0.04rem;
+}
+.invitation-info ul li i {
+    font-size: 0.12rem;
+}
+.invitation-info ul li span {
+    margin-left: 0.3rem;
+    color: #339df5;
+}
+.invitation-info ul li div {
+    width: 1.29rem;
+    height: 1.29rem;
+    margin: 0.4rem 0 0 0.7rem;
+}
+.invitation-rule {
+    width: 2.8rem;
+    margin-top: 0.4rem;
+}
+.invitation-rule div {
+    font-size: 0.14rem;
+    margin-top: 0.06rem;
+}
+
+
+
+
+/*邀请详情 E*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

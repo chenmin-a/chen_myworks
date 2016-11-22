@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>易催催</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/swiper-3.4.0.min.css"/>
+	<script type="text/javascript" src='../js/jquery-1.12.1.min.js'></script>
+	<script src="../js/swiper-3.4.0.min.js"></script>
+    <script type="text/javascript" src='../js/page.js'></script>
+    <script type="text/javascript" src='../js/popup.js'></script>
+	<script type="text/javascript">
+	(function(designW){var prevScreenW = null;function resize(){var screenW = window.innerWidth;if (prevScreenW == screenW){return}else{prevScreenW = screenW}document.documentElement.style.fontSize = 100 * screenW / designW + "px"}window.onresize = function(){resize()};resize();window.onload = function(){resize()}})(375);
+	</script>
+</head>
+<body>
+	<div class="wrap">
+	<!-- 顶部 -->
+		<div class="top">
+			<div class="top-in">
+				<div class="top-l back-btn fl head-back"><a href="javascript:;"></a></div>
+				账户余额
+			</div>
+		</div>
+		<div class="acc-balance">
+            <div class="balance-in">
+                <p class="balance-amt">30000000.00</p>
+                <p>账户余额（元）</p>
+            </div>
+			<div class="balance-list">
+				<div class="hd">
+					<ul class="balance-nav">
+						<li class="on">收入</li>
+						<i class="line"></i>
+						<li>支出</li>
+					</ul>
+				</div>
+			</div>
+			<div class="balance-list swiper-container">
+				<div class="bd swiper-wrapper">
+					<div class="balance-info income swiper-slide clearfix">
+						<dl>
+							<dt>
+								<span class="amt-dl">金额</span>
+								<span class="time-dl">时间</span>
+								<span class="type-dl">类型</span></dt>
+							<dd>
+								<span class="amt-dl">+500.00元</span>
+								<span class="time-dl">2016.11.23 10:53</span>
+								<span class="type-dl">佣金收入</span>
+							</dd>
+							<dd>
+								<span class="amt-dl">+70.00元</span>
+								<span class="time-dl">2016.10.13 10:53</span>
+								<span class="type-dl">邀请有奖</span>
+							</dd>
+							<dd>
+								<span class="amt-dl">+1500.00元</span>
+								<span class="time-dl">2016.9.03 10:53</span>
+								<span class="type-dl">佣金收入</span>
+							</dd>
+						</dl>
+					</div>
+					<div class="balance-info spending swiper-slide clearfix">
+						<dl>
+							<dt>
+								<span class="amt-dl">金额</span>
+								<span class="time-dl">时间</span>
+								<span class="type-dl">类型</span></dt>
+							<dd>
+								<span class="amt-dl">-500.00元</span>
+								<span class="time-dl">2016.11.23 10:53</span>
+								<span class="type-dl">佣金收入</span>
+							</dd>
+							<dd>
+								<span class="amt-dl">-70.00元</span>
+								<span class="time-dl">2016.10.13 10:53</span>
+								<span class="type-dl">邀请有奖</span>
+							</dd>
+							<dd>
+								<span class="amt-dl">-1500.00元</span>
+								<span class="time-dl">2016.9.03 10:53</span>
+								<span class="type-dl">佣金收入</span>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+        </div>	
+	</div>
+</body>
+<script>
+	//滑动 B
+	var mySwiper = new Swiper('.swiper-container',{
+		onSlideChangeEnd: function(swiper){
+			var index = swiper.activeIndex;
+			if(index == 0){
+				$('.balance-nav li:first-child').addClass("on").siblings().removeClass("on");
+			} else if(index == 1){
+				$('.balance-nav li:last-child').addClass("on").siblings().removeClass("on");
+			}
+		}
+	})
+	$('.balance-nav li:first-child').click(function(){
+		mySwiper.slideTo(0, 1000, false);
+		$(this).addClass("on").siblings().removeClass("on");
+	});
+	$('.balance-nav li:last-child').click(function(){
+		mySwiper.slideTo(1, 1000, false);
+		$(this).addClass("on").siblings().removeClass("on");
+	});
+	//滑动 E
+</script>
+</html>

@@ -1,0 +1,286 @@
+/*头部 B*/
+html {
+    background-color: #fff;
+}
+.head {
+    width: 3.75rem;
+    height: 1.16rem;
+    border-radius: 1px;
+    background-color: #133c8b;
+    box-shadow: 0 1px 0 0 #d0d5df;
+}
+.head-top {
+    width: 3.75rem;
+    height: 0.26rem;
+    padding-top: 0.18rem;
+}
+
+.head-top-left {
+    width: 0.24rem;
+    height: 0.24rem;
+    margin-left: 0.2rem;
+    background: url("../images/icon-drawer.png") no-repeat;
+    background-size: contain;
+}
+.head-top-center {
+    margin-left: 1.25rem;
+    font-size: 0.19rem;
+    color: #ffffff;
+}
+.head-top-right {
+    width: 0.28rem;
+    height: 0.25rem;
+    margin-right: 0.2rem;
+    background: url("../images/combined-shape.png") no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.head-top-right i {
+    position: absolute;
+    width: 0.08rem;
+    height: 0.08rem;
+    background-color: #f13f1a;
+    top: -0.02rem;
+    right: -0.02rem;
+    border-radius: 50%;
+}
+.head-bottom {
+    width: 3.75rem;
+    height: 0.52rem;
+    margin-top: 0.2rem;
+    position: relative;
+}
+.head-bottom-left {
+    margin-left: 0.4rem;
+    color: #ffffff;
+}
+.head-bottom-center {
+    margin-left: 0.75rem;
+    font-size: 0.15rem;
+    color: #ffffff;
+}
+.head-bottom-right {
+    margin-left: 0.75rem;
+    font-size: 0.15rem;
+    color: #ffffff;
+}
+.curr {
+    font-size: 0.17rem;
+}
+.head-bottom-arr {
+    border: 0.06rem solid;
+    border-top-color: #133c8b;
+    border-left-color: #133c8b;
+    border-right-color: #133c8b;
+    border-bottom-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+
+.head-bottom .one {
+    left: 0.6rem;
+    display: block;
+}
+.head-bottom .two {
+    left: 1.8rem;
+}
+.head-bottom .three {
+    left: 3rem;
+}
+/*头部 E*/
+
+
+/*佣金部分 B*/
+.case {
+    background-color: #fff;
+}
+.case > .case-status1 {
+    background-color: #fff;
+    padding: 0.39rem 0 0 1rem;
+}
+.case-status1 i {
+    display: block;
+    width: 1.84rem;
+    height: 1.68rem;
+    background: url("../images/search.png") no-repeat;
+    background-size: contain;
+}
+.case-status1 p {
+    margin-top: 0.27rem;
+    width: 1.72rem;
+    height: 0.53rem;
+    font-size: 0.19rem;
+    text-align: center;
+    color: #133c8b;
+}
+.case-status1 div {
+    margin-top: 0.07rem;
+    width: 1.72rem;
+    height: 0.42rem;
+    font-size: 0.15rem;
+    font-weight: 300;
+    text-align: center;
+    color: #133c8b;
+}
+
+
+.case-status3-one {
+    padding: 0.67rem 0 0 1.18rem;
+    width: 1.44rem;
+    height: 0.56rem;
+    font-size: 0.18rem;
+    font-weight: 600;
+    line-height: 1.56;
+    text-align: center;
+    color: #5a667c;
+}
+.case-status3-two {
+    margin: 0.35rem 0.6rem 0 0.6rem;
+}
+.case-status3-two-person div {
+    width: 1rem;
+    height: 1rem;
+    background: url("../images/entrance-person-copy-2.png");
+    background-size: contain;
+}
+.case-status3-two-company div {
+    width: 1rem;
+    height: 1rem;
+    background: url("../images/entrance-company.png");
+    background-size: contain;
+}
+.case-status3-two div p {
+    margin-top: 0.17rem;
+    text-align: center;
+    color: #5a667c;
+    font-size: 0.19rem;
+}
+
+
+
+
+/*侧边栏 B*/
+.sidebar-layer {
+    width: 3.75rem;
+    height: 6.27rem;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    left: -3.75rem;
+}
+
+.sidebar {
+    width: 2.9rem;
+    height: 6.27rem;
+    background-image: linear-gradient(340deg, rgba(44,151,240,0.9), rgba(19,73,176,0.9));
+}
+
+.exit-sidebar {
+    width: 0.85rem;
+    height: 6.27rem;
+}
+
+.sidebar .user {
+    margin: 0.32rem 0 0 0.25rem;
+}
+.sidebar .user-photo img {
+    width: 0.64rem;
+    height: 0.64rem;
+    border-radius: 50%;
+}
+.sidebar .user-name {
+    margin: 0.26rem 0 0 0.135rem;
+    font-size: 0.19rem;
+    color: #ffffff;
+}
+.sidebar .user-arr {
+    width: 0.11rem;
+    height: 0.19rem;
+    margin: 0.25rem 0.22rem 0 0;
+    background: url("../images/user-arr.png") no-repeat;
+    background-size: contain;
+}
+
+.sidebar .money-info {
+    margin: 0.23rem 0 0 0.23rem;
+    color: #ffffff;
+    font-size: 0.13rem;
+}
+.sidebar .money-info span {
+    color: #ffffff;
+    font-size: 0.18rem;
+}
+
+.user-nav {
+    margin: 0.34rem 0 0 0.24rem;
+    color: #ffffff;
+    font-size: 0.15rem;
+}
+
+.user-nav li {
+    line-height: 0.51rem;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.22);
+}
+.user-nav li a {
+    color: #ffffff;
+}
+.user-nav-icon {
+    display: inline-block;
+    width: 0.245rem;
+    height: 0.24rem;
+    vertical-align: middle;
+    margin-top: -0.04rem;
+    margin-right: 0.1rem;
+}
+.user-nav li .icon1 {
+    background: url("../images/icon-case.png") no-repeat;
+    background-size: contain;
+}
+.user-nav li .icon2 {
+    background: url("../images/oval-10.png") no-repeat;
+    background-size: contain;
+}
+.user-nav li .icon3 {
+    background: url("../images/rectangle-13.png") no-repeat;
+    background-size: contain;
+}
+.user-nav li .icon4 {
+    background: url("../images/rectangle-16.png") no-repeat;
+    background-size: contain;
+}
+.user-nav li .icon5 {
+    background: url("../images/icon-gift.png") no-repeat;
+    background-size: contain;
+}
+.user-nav li .icon6 {
+    background: url("../images/polygon-2.png") no-repeat;
+    background-size: contain;
+}
+
+/*侧边栏 E*/
+
+
+/*企业未认证首页*/
+.com-head-bottom .head-bottom-left,
+.com-head-bottom .head-bottom-center,
+.com-head-bottom .head-bottom-right{
+    margin-left: 0.38rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

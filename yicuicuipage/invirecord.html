@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <!--申明当前页面的编码集-->
+    <meta charset="UTF-8">
+    <!--网页标题-->
+    <title>易催催</title>
+    <!--网页关键词-->
+    <meta name="keywords" content="易催催" />
+    <!--网页描述-->
+    <meta name="description" content="" />
+    <!--适配当前屏幕-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!--禁止自动识别电话号码-->
+    <meta name="format-detection" content="telephone=no" />
+    <!--禁止自动识别邮箱-->
+    <meta content="email=no" name="format-detection" />
+    <!--iphone中safari私有meta标签,允许全屏模式浏览,隐藏浏览器导航栏-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!--iphone中safari顶端的状态条的样式black(黑色)-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/invirecord.css"/>
+    <script>
+        (function (designW) {
+            var prevScreenW = null;
+
+            function resize() {
+                var screenW = window.innerWidth;
+                if (prevScreenW == screenW) {
+                    return
+                } else {
+                    prevScreenW = screenW
+                }
+                document.documentElement.style.fontSize = 100 * screenW / designW + "px"
+            }
+
+            window.onresize = function () {
+                resize()
+            };
+            resize();
+            window.onload = function () {
+                resize()
+            }
+        })(375);
+    </script>
+</head>
+<body>
+    <!--头部 B-->
+    <div class="head">
+        <div class="head-arr head-back fl"></div>
+        <div class="head-info fl">邀请记录</div>
+    </div>
+    <!--头部 E-->
+
+    <!--邀请记录 B-->
+    <div class="record">
+        <ul class="record-title">
+            <li>邀请时间</li>
+            <li>受邀用户</li>
+        </ul>
+        <ul class="record-txt clearfix">
+            <li class="clearfix"><div class="record-txt-date fl">2016-9-8 12:44</div><div class="record-txt-phone fr">185********</div></li>
+            <li class="clearfix"><div class="record-txt-date fl">2016-9-8 12:44</div><div class="record-txt-phone fr">185********</div></li>
+            <li class="clearfix"><div class="record-txt-date fl">2016-9-8 12:44</div><div class="record-txt-phone fr">185********</div></li>
+            <li class="clearfix"><div class="record-txt-date fl">2016-9-8 12:44</div><div class="record-txt-phone fr">185********</div></li>
+            <li class="clearfix"><div class="record-txt-date fl">2016-9-8 12:44</div><div class="record-txt-phone fr">185********</div></li>
+            <li class="clearfix"><div class="record-txt-date fl">2016-9-8 12:44</div><div class="record-txt-phone fr">185********</div></li>
+        </ul>
+    </div>
+    <!--邀请记录 E-->
+</body>
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/home.js"></script>
+</html>

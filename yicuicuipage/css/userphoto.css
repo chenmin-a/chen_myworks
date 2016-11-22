@@ -1,0 +1,121 @@
+/*头部 B*/
+.head {
+    width: 3.75rem;
+    height: 0.44rem;
+    background-color: #133c8b;
+}
+.head-cancel1 {
+    display: inline-block;
+    width: 0.24rem;
+    height: 0.24rem;
+    margin: 0.1rem 0 0 0.21rem;
+    background: url("../images/icon-cancel.png") no-repeat;
+    background-size: contain;
+}
+.head-cancel1 a {
+    display: inline-block;
+    width: 0.24rem;
+    height: 0.24rem;
+    margin: 0.1rem 0 0 0.21rem;
+}
+.head-info {
+    margin: 0.11rem 0 0 0.82rem;
+    width: 1.21rem;
+    height: 0.18rem;
+    font-size: 0.19rem;
+    text-align: center;
+    color: #ffffff;
+}
+.head-alter a {
+    display: inline-block;
+    width: 0.24rem;
+    height: 0.24rem;
+    margin: 0.1rem 0.18rem 0 0;
+    background: url("../images/icon-home.png") no-repeat;
+    background-size: contain;
+    position: relative;
+}
+/*头部 E*/
+
+/*头像预览区域 B*/
+.photo {
+    width: 3.75rem;
+    height: 5.2rem;
+    background-color: #313439;
+    padding-top: 0.53rem;
+}
+.photo-preview {
+    margin-bottom: 0.93rem;
+    width: 3.71rem;
+    height: 3.71rem;
+    border: solid 2px #339df5;
+}
+.photo-preview img {
+    width: 3.71rem;
+    height: 3.71rem;
+}
+.photo-btn {
+    width: 3.4rem;
+    height: 0.42rem;
+    background-color: #5d5e5f;
+    padding: 0.2rem 0 0 0.35rem;
+}
+.photo-btn div:first-child {
+    height: 0.23rem;
+    width: 0.36rem;
+    overflow: hidden;
+    color: #ffffff;
+    font-size: 0.18rem;
+    font-weight: 500;
+    position: relative;
+}
+.photo-btn-left {
+    margin-left: 0.35rem;
+    position: absolute;
+    top: 0;
+    left: -0.36rem;
+    opacity: 0;
+    width: 0.36rem;
+}
+.photo-btn-right {
+    margin-right: 0.35rem;
+    font-size: 0.18rem;
+    font-weight: 500;
+    color: #ffffff;
+    position: relative;
+}
+.photo-btn-right input {
+    width: 0.36rem;
+    height: 0.22rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+/*头像预览区域 E*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

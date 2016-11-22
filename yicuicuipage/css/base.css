@@ -1,0 +1,312 @@
+﻿@charset "UTF-8";
+/*重置默认设置 B*/
+html {
+    font-size: 625%;
+}
+
+*,::before,::after {
+    margin: 0;
+    padding: 0;
+}
+
+::before,::after {
+    /*设置所有的盒子都是从边框开始计算的 使用的是流式布局*/
+    -webkit-box-sizing: border-box;   /*兼容主流浏览器*/
+    box-sizing: border-box;
+    /*清除移动端默认的点击高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+}
+
+fieldset, img, input, button,div,ul,ol,li { 			/*fieldset组合表单中的相关元素*/
+    border: none;
+    outline-style: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+ul, ol ,li {
+    list-style: none;				/*清除列表风格*/
+}
+
+input {
+    font-family: "Microsoft YaHei", "微软雅黑";
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+
+input,textarea {
+    outline: none;
+    border: none;
+    resize: none;       /*防止多行文本框拖动*/
+    /*清除移动端输入框的默认的样式*/
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -webkit-user-modify:read-write-plaintext-only;
+}
+a,img,div,ul,ol,li,p,h1, h2, h3, h4, h5, h6,input,textarea {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);         /*去除点击产生的小块块*/
+    -moz-tap-highlight-color: rgba(0,0,0,0);         /*去除点击产生的小块块*/
+    -o-tap-highlight-color: rgba(0,0,0,0);         /*去除点击产生的小块块*/
+    tap-highlight-color: rgba(0,0,0,0);         /*去除点击产生的小块块*/
+}
+
+img {
+    border: 0;
+    vertical-align: middle;     /*  去掉图片低测默认的3像素空白缝隙*/
+}
+
+
+table {
+    border-collapse: collapse;			/*合并外边线*/
+}
+
+
+body {
+    font: 0.16rem Microsoft YaHei;
+    color: #666;
+    background: #d0d5df;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+/*重置默认设置 E*/
+
+
+/*接单弹窗 B*/
+.popup {
+    width: 3.75rem;
+    height: 6.67rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+/*确定接单 B*/
+.popup-yes {
+    margin: 1.9rem 0 0 0.26rem;
+    width: 3.23rem;
+    background-color: #fff;
+    font-size: 0.16rem;
+    font-weight: 500;
+    color: #5a667c;
+    border-radius: 4px;
+    display: none;
+}
+.popup-yes-info {
+    width: 2.83rem;
+    padding: 0.25rem;
+    line-height: 1.8;
+}
+.popup-btn input {
+    width: 1.4rem;
+    height: 0.43rem;
+    border-radius: 2px;
+    border: solid 1px #339df5;
+    margin-bottom: 0.23rem;
+    font-size: 0.17rem;
+}
+.popup-btn-left {
+    margin-left: 0.14rem;
+    background-color: #fff;
+    color: #339df5;
+}
+.popup-btn-right {
+    margin-right: 0.14rem;
+    background-color: #339df5;
+    color: #ffffff;
+}
+/*确定接单 E*/
+/*拒绝接单 B*/
+.popup-no {
+    margin: 1.54rem 0 0 0.26rem;
+    width: 3.23rem;
+    background-color: #fff;
+    font-size: 0.16rem;
+    font-weight: 500;
+    color: #5a667c;
+    border-radius: 4px;
+    display: none;
+}
+.popup-no-info ul {
+    margin: 0.24rem 0.31rem 0.2rem 0.32rem;
+    padding: 0.24rem 0 0 0;
+    border-bottom: solid 0.5px #d0d5df;
+}
+.popup-no-info ul li {
+    margin-bottom: 0.1rem;
+}
+.popup-no-info ul li:last-child {
+    margin-bottom: 0.24rem;
+}
+.popup-no-info ul li div:first-child {
+    float: left;
+}
+.popup-no-info ul li div:last-child {
+    float: right;
+    color: #339df5;
+}
+.popup-no-info-text {
+    margin-bottom: 0.22rem;
+}
+.popup-no-info-text p {
+    text-align: center;
+    margin-bottom: 0.08rem;
+}
+/*拒绝接单 E*/
+/*完成任务 B*/
+.popup-complete {
+    margin: 1.96rem 0 0 0.26rem;
+    width: 3.23rem;
+    background-color: #fff;
+    font-size: 0.16rem;
+    font-weight: 500;
+    color: #5a667c;
+    border-radius: 4px;
+    display: none;
+}
+.popup-complete-info {
+    padding: 0.4rem 0.31rem 0.33rem 0.31rem;
+    line-height: 1.8;
+}
+.popup-complete-info span {
+    color: #339df5;
+}
+.popup-complete-btn {
+    margin: 0 0 0.24rem 0.16rem;
+    width: 2.91rem;
+    height: 0.42rem;
+    border-radius: 2px;
+    background-color: #339df5;
+    font-size: 0.17rem;
+    text-align: center;
+    color: #ffffff;
+}
+/*完成任务 E*/
+/*放弃任务 B*/
+.popup-abandon {
+    margin: 1.96rem 0 0 0.26rem;
+    width: 3.23rem;
+    background-color: #fff;
+    font-size: 0.16rem;
+    font-weight: 500;
+    color: #5a667c;
+    border-radius: 4px;
+    display: none;
+}
+.popup-abandon-info {
+    width: 2.83rem;
+    padding: 0.25rem;
+    line-height: 1.8;
+}
+.popup-abandon-info p {
+    text-align: center;
+}
+/*放弃任务 E*/
+/*申请延期 B*/
+.popup-delay {
+    margin: 1.07rem 0 0 0.26rem;
+    width: 3.23rem;
+    background-color: #fff;
+    font-size: 0.16rem;
+    font-weight: 500;
+    color: #5a667c;
+    border-radius: 4px;
+    display: none;
+}
+.popup-delay-check p {
+    font-size: 0.18rem;
+    font-weight: 500;
+    text-align: center;
+    color: #5a667c;
+    padding: 0.24rem 0;
+}
+.popup-delay-check ul {
+    border-top: solid 0.5px #d0d5df;
+    margin: 0 0.35rem;
+    padding-top: 0.17rem;
+}
+.popup-delay-check ul li {
+    margin-bottom: 0.2rem;
+}
+.popup-delay-check ul li i {
+    display: inline-block;
+    width: 0.16rem;
+    height: 0.16rem;
+    background: url("../images/checkbox.png") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+.popup-delay-check ul li .curr {
+    background: url("../images/checkbox-0.png") no-repeat;
+    background-size: contain;
+}
+.popup-delay-check ul li:last-child input {
+    width: 2rem;
+    height: 0.15rem;
+    border-radius: 2px;
+    background-color: #eaedf2;
+    box-shadow: inset 0 0.5px 0 0 #d0d5df;
+    padding: 0.05rem 0.1rem;
+    font-size: 0.17rem;
+    color: #000;
+}
+.popup-delay2 {
+    margin: 1.96rem 0 0 0.26rem;
+    width: 3.23rem;
+    background-color: #fff;
+    font-size: 0.16rem;
+    font-weight: 500;
+    color: #5a667c;
+    border-radius: 4px;
+    display: none;
+}
+/*申请延期 E*/
+/*接单弹窗 E*/

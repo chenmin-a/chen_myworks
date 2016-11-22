@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>易催催</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/fault.css"/>
+	<script type="text/javascript" src='../js/jquery-1.12.1.min.js'></script>
+    <script type="text/javascript" src='../js/page.js'></script>
+    <script type="text/javascript" src='../js/popup.js'></script>
+	<script type="text/javascript">
+   (function(designW){var prevScreenW = null;function resize(){var screenW = window.innerWidth;if (prevScreenW == screenW){return}else{prevScreenW = screenW}document.documentElement.style.fontSize = 100 * screenW / designW + "px"}window.onresize = function(){resize()};resize();window.onload = function(){resize()}})(375);
+	</script>
+
+</head>
+<body>
+	<div class="wrap">
+	<!-- 顶部 -->
+		<div class="top">
+			<div class="top-in">
+				<div class="top-l fl head-back"><a href="javascript:;"></a></div>
+				忘记密码
+				<div class="top-r fr"><a href="javascript:;"></a></div>
+			</div>
+		</div>
+	
+	<!-- 忘记密码第一步 -->
+	<div class="form forgetpwd forgetpwd1">
+	    <form id="form1">
+	        <div class="input-wrp first">
+	            <input type="text" placeholder="手机号" autocomplete="off" id="mobile" name="mobile">
+	        </div>
+	        <div class="input-wrp captcha" enable=false>
+	            <input type="text" placeholder="短信验证码" autocomplete="off" id="msgCode" name="msgCode">
+				<input type="button" class="getCaptch" id="getCode" name="getCode" value="获取验证码"/>
+	        </div>
+	        <div class="btns" id="next">
+	            <a href="javascript:;">下一步</a>
+	        </div>
+	    </form>	    
+	</div>
+	</div>
+	<!--错误提示弹窗 B-->
+	<div class="fault">
+		<div class="fault-txt">
+			<div class="fault-txt-info"></div>
+			<input type="button" value="确认"/>
+		</div>
+	</div>
+	<!--错误提示弹窗 E-->
+</body>
+<script src="../js/forgetPwdAjax.js"></script>
+</html>

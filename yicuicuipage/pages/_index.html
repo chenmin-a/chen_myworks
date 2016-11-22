@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>易催催</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fault.css"/>
+    <link rel="stylesheet" href="../css/swiper-3.4.0.min.css"/>
+    <script type="text/javascript" src='../js/jquery-1.12.1.min.js'></script>
+    <script src="../js/swiper-3.4.0.min.js"></script>
+    <script type="text/javascript" src='../js/page.js'></script>
+    <script type="text/javascript" src='../js/popup.js'></script>
+    <script type="text/javascript">
+        (function (designW) {
+            var prevScreenW = null;
+
+            function resize() {
+                var screenW = window.innerWidth;
+                if (prevScreenW == screenW) {
+                    return
+                } else {
+                    prevScreenW = screenW
+                }
+                document.documentElement.style.fontSize = 100 * screenW / designW + "px"
+            }
+
+            window.onresize = function () {
+                resize()
+            };
+            resize();
+            window.onload = function () {
+                resize()
+            }
+        })(375);
+    </script>
+</head>
+
+<body>
+<div class="wrap">
+    <!-- 顶部 -->
+    <div class="top">
+        <div class="top-in">
+            <div class="top-l msg-btn fl" id='msgbtn'>
+                <a href="javascript:;"></a>
+            </div>
+            首页
+            <div class="top-r news fr">
+                <a href="message.html"></a>
+                <i class="news-point"></i>
+            </div>
+        </div>
+    </div>
+    <!-- 企业案子状态 -->
+    <div class="slideTxtBox case-nav-list" id="leftTabBox">
+        <!-- 导航tab -->
+        <div class="nav hd">
+            <ul class="clearfix" id='nav-tab'>
+                <li class="on"><a href="javascript:;">待接单</a></li>
+                <li><a href="javascript:;">待分配</a></li>
+                <li><a href="javascript:;">进行中</a></li>
+                <li><a href="javascript:;">已结束</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="swiper-container">
+        <div class="bd swiper-wrapper" id='caseStatus'>
+            <!--企业待接单-->
+            <div class="company-status swiper-slide">
+                <div class="case-info clearfix">
+                    <div class="case-info-con">
+                        <a href="../details7.html">
+                            <div class="case-info-hd clearfix">
+                                <div class="commission-info exp-commission fl">
+                                    <p class="num"><span class="amt ">36000.00</span>元</p>
+
+                                    <p class="txt">预期可赚佣金</p>
+                                </div>
+                                <i class="line"></i>
+
+                                <div class="commission-info commission-pro fl">
+                                    <p class="num"><span class="amt">40</span>%</p>
+
+                                    <p class="txt">最高佣金比例</p>
+                                </div>
+                                <i class="line"></i>
+
+                                <div class="commission-info amount fl">
+                                    <p class="num"><span class="amt">90000.00</span>元</p>
+
+                                    <p class="txt">本案应还款</p>
+                                </div>
+                            </div>
+                            <div class="case-info-bd">
+                                <div class="case-info-bd-top clearfix">
+                                    <div class="bd-top-l fl">
+                                        欠款人:<span>钱先生</span>
+                                    </div>
+                                    <div class="bd-top-r fr">
+                                        逾期天数:<span class="out-date b-word">180</span>天
+                                    </div>
+                                </div>
+                                <div class="case-info-bd-btm">
+                                    <p>地址：<span class="address">北京市海淀区中关村大街</span></p>
+
+                                    <p>本案有效期:<span class="expiry-date b-word">30</span>天</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <div class="rlt-btn refuse fl">
+                            <a href="javascript:;">拒绝接单</a>
+                        </div>
+                        <div class="btns receive fl">
+                            <a href="javascript:;">马上接单</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-info clearfix">
+                    <div class="case-info-con">
+                        <a href="../details7.html">
+                            <div class="case-info-hd clearfix">
+                                <div class="commission-info exp-commission fl">
+                                    <p class="num"><span class="amt ">36000.00</span>元</p>
+
+                                    <p class="txt">预期可赚佣金</p>
+                                </div>
+                                <i class="line"></i>
+
+                                <div class="commission-info commission-pro fl">
+                                    <p class="num"><span class="amt">40</span>%</p>
+
+                                    <p class="txt">最高佣金比例</p>
+                                </div>
+                                <i class="line"></i>
+
+                                <div class="commission-info amount fl">
+                                    <p class="num"><span class="amt">90000.00</span>元</p>
+
+                                    <p class="txt">本案应还款</p>
+                                </div>
+                            </div>
+                            <div class="case-info-bd">
+                                <div class="case-info-bd-top clearfix">
+                                    <div class="bd-top-l fl">
+                                        欠款人:<span>钱先生</span>
+                                    </div>
+                                    <div class="bd-top-r fr">
+                                        逾期天数:<span class="out-date b-word">180</span>天
+                                    </div>
+                                </div>
+                                <div class="case-info-bd-btm">
+                                    <p>地址：<span class="address">北京市海淀区中关村大街</span></p>
+
+                                    <p>本案有效期:<span class="expiry-date b-word">30</span>天</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <div class="rlt-btn refuse fl">
+                            <a href="javascript:;">拒绝接单</a>
+                        </div>
+                        <div class="btns receive fl">
+                            <a href="javascript:;">马上接单</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-info clearfix">
+                    <div class="case-info-con">
+                        <a href="../details7.html">
+                            <div class="case-info-hd clearfix">
+                                <div class="commission-info exp-commission fl">
+                                    <p class="num"><span class="amt ">36000.00</span>元</p>
+
+                                    <p class="txt">预期可赚佣金</p>
+                                </div>
+                                <i class="line"></i>
+
+                                <div class="commission-info commission-pro fl">
+                                    <p class="num"><span class="amt">40</span>%</p>
+
+                                    <p class="txt">最高佣金比例</p>
+                                </div>
+                                <i class="line"></i>
+
+                                <div class="commission-info amount fl">
+                                    <p class="num"><span class="amt">90000.00</span>元</p>
+
+                                    <p class="txt">本案应还款</p>
+                                </div>
+                            </div>
+                            <div class="case-info-bd">
+                                <div class="case-info-bd-top clearfix">
+                                    <div class="bd-top-l fl">
+                                        欠款人:<span>钱先生</span>
+                                    </div>
+                                    <div class="bd-top-r fr">
+                                        逾期天数:<span class="out-date b-word">180</span>天
+                                    </div>
+                                </div>
+                                <div class="case-info-bd-btm">
+                                    <p>地址：<span class="address">北京市海淀区中关村大街</span></p>
+
+                                    <p>本案有效期:<span class="expiry-date b-word">30</span>天</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <div class="rlt-btn refuse fl">
+                            <a href="javascript:;">拒绝接单</a>
+                        </div>
+                        <div class="btns receive fl">
+                            <a href="javascript:;">马上接单</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 企业待接单暂无任务显示 display:block 有任务 display:none-->
+                <div class="case-info case-info-nothing clearfix"  style="display: none;">
+                    <div class="case-info-hd"></div>
+                    <div class="case-info-bd">
+                        <h4>暂无合适您的任务</h4>
+                        <p>休息一下再<span class="b-word">“刷新”</span> 一下试试看吧～</p>
+                    </div>
+                    <div class="rlt-btn refresh-btn">
+                        <a href="javascript:;" class="b-word">刷新列表</a>
+                    </div>
+                </div>
+            </div>
+            <!--企业待分配-->
+            <div class="company-status swiper-slide">
+                <div class="case-info">
+                    <div class="case-info-con">
+                        <a href="../details8.html">
+                            <div class="case-info-hd clearfix">
+                                <div class="commission-info exp-commission fl">
+                                    <p class="num"><span class="amt">36000.00</span>元</p>
+
+                                    <p class="txt">预期可赚佣金</p>
+                                </div>
+                                <i class="line"></i>
+
+                                <div class="commission-info commission-pro fl">
+                                    <p class="num"><span class="amt">40</span>%</p>
+
+                                    <p class="txt">最高佣金比例</p>
+                                </div>
+                                <i class="line"></i>
+
+                                <div class="commission-info amount fl">
+                                    <p class="num"><span class="amt">90000.00</span>元</p>
+
+                                    <p class="txt">本案应还款</p>
+                                </div>
+                            </div>
+                            <div class="case-info-bd">
+                                <div class="case-info-bd-top clearfix">
+                                    <div class="bd-top-l fl">
+                                        欠款人:<span>钱先生</span>
+                                    </div>
+                                    <div class="bd-top-r fr">
+                                        逾期天数:<span class="out-date b-word">180</span>天
+                                    </div>
+                                </div>
+                                <div class="case-info-bd-btm">
+                                    <p>地址：<span class="address">北京市海淀区中关村大街</span></p>
+
+                                    <p>本案有效期:<span class="expiry-date b-word">30</span>天</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="btns task-btn">
+                        <a href="javascript:;">分配任务</a>
+                    </div>
+                </div>
+                <div class="case-info">
+                    <div class="case-info-con">
+                        <a href="../details8.html">
+                            <div class="case-info-hd clearfix">
+                                <div class="commission-info exp-commission fl">
+                                    <p class="num"><span class="amt">36000.00</span>元</p>
+
+                                    <p class="txt">预期可赚佣金</p>
+                                </div>
+                                <i class="line"></i>
+
+                                <div class="commission-info commission-pro fl">
+                                    <p class="num"><span class="amt">40</span>%</p>
+
+                                    <p class="txt">最高佣金比例</p>
+                                </div>
+                                <i class="line"></i>
+
+                                <div class="commission-info amount fl">
+                                    <p class="num"><span class="amt">90000.00</span>元</p>
+
+                                    <p class="txt">本案应还款</p>
+                                </div>
+                            </div>
+                            <div class="case-info-bd">
+                                <div class="case-info-bd-top clearfix">
+                                    <div class="bd-top-l fl">
+                                        欠款人:<span>钱先生</span>
+                                    </div>
+                                    <div class="bd-top-r fr">
+                                        逾期天数:<span class="out-date b-word">180</span>天
+                                    </div>
+                                </div>
+                                <div class="case-info-bd-btm">
+                                    <p>地址：<span class="address">北京市海淀区中关村大街</span></p>
+
+                                    <p>本案有效期:<span class="expiry-date b-word">30</span>天</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="btns task-btn">
+                        <a href="javascript:;">分配任务</a>
+                    </div>
+                </div>
+                <div class="case-info">
+                    <div class="case-info-con">
+                        <a href="../details.html">
+                            <div class="case-info-hd clearfix">
+                                <div class="commission-info exp-commission fl">
+                                    <p class="num"><span class="amt">36000.00</span>元</p>
+
+                                    <p class="txt">预期可赚佣金</p>
+                                </div>
+                                <i class="line"></i>
+
+                                <div class="commission-info commission-pro fl">
+                                    <p class="num"><span class="amt">40</span>%</p>
+
+                                    <p class="txt">最高佣金比例</p>
+                                </div>
+                                <i class="line"></i>
+
+                                <div class="commission-info amount fl">
+                                    <p class="num"><span class="amt">90000.00</span>元</p>
+
+                                    <p class="txt">本案应还款</p>
+                                </div>
+                            </div>
+                            <div class="case-info-bd">
+                                <div class="case-info-bd-top clearfix">
+                                    <div class="bd-top-l fl">
+                                        欠款人:<span>钱先生</span>
+                                    </div>
+                                    <div class="bd-top-r fr">
+                                        逾期天数:<span class="out-date b-word">180</span>天
+                                    </div>
+                                </div>
+                                <div class="case-info-bd-btm">
+                                    <p>地址：<span class="address">北京市海淀区中关村大街</span></p>
+
+                                    <p>本案有效期:<span class="expiry-date b-word">30</span>天</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="btns task-btn">
+                        <a href="javascript:;">分配任务</a>
+                    </div>
+                </div>
+                <!-- 企业待分配暂无任务显示 -->
+                <div class="case-info case-info-nothing clearfix"  style="display: none;">
+                </div>
+            </div>
+            <!--企业进行中-->
+            <div class="company-status swiper-slide">
+                <div class="case-info">
+                    <div class="case-info-con">
+                        <a href="../details9.html">
+                            <div class="case-info-hd clearfix">
+                                <div class="commission-info exp-commission fl">
+                                    <p class="num"><span class="amt">36000.00</span>元</p>
+
+                                    <p class="txt">预期可赚佣金</p>
+                                </div>
+                                <i class="line"></i>
+
+                                <div class="commission-info commission-pro fl">
+                                    <p class="num"><span class="amt">40</span>%</p>
+
+                                    <p class="txt">最高佣金比例</p>
+                                </div>
+                                <i class="line"></i>
+
+                                <div class="commission-info amount fl">
+                                    <p class="num"><span class="amt">90000.00</span>元</p>
+
+                                    <p class="txt">本案应还款</p>
+                                </div>
+                            </div>
+                            <div class="case-info-bd">
+                                <div class="case-info-bd-top clearfix">
+                                    <div class="bd-top-l fl">
+                                        欠款人:<span>钱先生</span>
+                                    </div>
+                                    <div class="bd-top-r fr">
+                                        逾期天数:<span class="out-date b-word">180</span>天
+                                    </div>
+                                </div>
+                                <div class="case-info-bd-btm">
+                                    <p>地址：<span class="address">北京市海淀区中关村大街11号中关村E世界10层A座1019B</span></p>
+                                </div>
+                                <div class="collectors">
+                                    催收员:<span class="collt-name">张勇</span>已拜访:<span class="times b-word">3</span>次
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="case-info">
+                    <div class="case-info-con">
+                        <a href="../details9.html">
+                            <div class="case-info-hd clearfix">
+                                <div class="commission-info exp-commission fl">
+                                    <p class="num"><span class="amt">36000.00</span>元</p>
+
+                                    <p class="txt">预期可赚佣金</p>
+                                </div>
+                                <i class="line"></i>
+
+                                <div class="commission-info commission-pro fl">
+                                    <p class="num"><span class="amt">40</span>%</p>
+
+                                    <p class="txt">最高佣金比例</p>
+                                </div>
+                                <i class="line"></i>
+
+                                <div class="commission-info amount fl">
+                                    <p class="num"><span class="amt">90000.00</span>元</p>
+
+                                    <p class="txt">本案应还款</p>
+                                </div>
+                            </div>
+                            <div class="case-info-bd">
+                                <div class="case-info-bd-top clearfix">
+                                    <div class="bd-top-l fl">
+                                        欠款人:<span>钱先生</span>
+                                    </div>
+                                    <div class="bd-top-r fr">
+                                        逾期天数:<span class="out-date b-word">180</span>天
+                                    </div>
+                                </div>
+                                <div class="case-info-bd-btm">
+                                    <p>地址：<span class="address">北京市海淀区中关村大街11号中关村E世界10层A座1019B</span></p>
+                                </div>
+                                <div class="collectors">
+                                    催收员:<span class="collt-name">张勇</span>已拜访:<span class="times b-word">3</span>次
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="case-info">
+                    <div class="case-info-con">
+                        <a href="../details9.html">
+                            <div class="case-info-hd clearfix">
+                                <div class="commission-info exp-commission fl">
+                                    <p class="num"><span class="amt">36000.00</span>元</p>
+
+                                    <p class="txt">预期可赚佣金</p>
+                                </div>
+                                <i class="line"></i>
+
+                                <div class="commission-info commission-pro fl">
+                                    <p class="num"><span class="amt">40</span>%</p>
+
+                                    <p class="txt">最高佣金比例</p>
+                                </div>
+                                <i class="line"></i>
+
+                                <div class="commission-info amount fl">
+                                    <p class="num"><span class="amt">90000.00</span>元</p>
+
+                                    <p class="txt">本案应还款</p>
+                                </div>
+                            </div>
+                            <div class="case-info-bd">
+                                <div class="case-info-bd-top clearfix">
+                                    <div class="bd-top-l fl">
+                                        欠款人:<span>钱先生</span>
+                                    </div>
+                                    <div class="bd-top-r fr">
+                                        逾期天数:<span class="out-date b-word">180</span>天
+                                    </div>
+                                </div>
+                                <div class="case-info-bd-btm">
+                                    <p>地址：<span class="address">北京市海淀区中关村大街11号中关村E世界10层A座1019B</span></p>
+                                </div>
+                                <div class="collectors">
+                                    催收员:<span class="collt-name">张勇</span>已拜访:<span class="times b-word">3</span>次
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 企业进行中暂无任务显示 -->
+                <div class="case-info case-info-nothing clearfix"  style="display: none;">
+                </div>
+            </div>
+            <!--企业已结束-->
+            <div class="company-status swiper-slide">
+                <div class="case-info" style="padding-bottom: 0.47rem;">
+                    <div class="case-info-con">
+                        <a href="../details4.html">
+                            <div class="case-info-hd clearfix">
+                                <div class="commission-info exp-commission fl">
+                                    <p class="num"><span class="amt">36000.00</span>元</p>
+
+                                    <p class="txt">预期可赚佣金</p>
+                                </div>
+                                <i class="line"></i>
+
+                                <div class="commission-info commission-pro fl">
+                                    <p class="num"><span class="amt">40</span>%</p>
+
+                                    <p class="txt">最高佣金比例</p>
+                                </div>
+                                <i class="line"></i>
+
+                                <div class="commission-info amount fl">
+                                    <p class="num"><span class="amt">90000.00</span>元</p>
+
+                                    <p class="txt">本案应还款</p>
+                                </div>
+                            </div>
+                            <div class="case-info-bd">
+                                <div class="case-info-bd-top clearfix">
+                                    <div class="bd-top-l fl">
+                                        欠款人:<span>钱先生</span>
+                                    </div>
+                                    <div class="bd-top-r fr">
+                                        逾期天数:<span class="out-date b-word">180</span>天
+                                    </div>
+                                </div>
+                                <div class="case-info-bd-btm">
+                                    <p>地址：<span class="address">北京市海淀区中关村大街11号</span></p>
+                                </div>
+                                <div class="sign"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="case-info" style="padding-bottom: 0.47rem;">
+                    <div class="case-info-con">
+                        <a href="../details4.html">
+                            <div class="case-info-hd clearfix">
+                                <div class="commission-info exp-commission fl">
+                                    <p class="num"><span class="amt">36000.00</span>元</p>
+
+                                    <p class="txt">预期可赚佣金</p>
+                                </div>
+                                <i class="line"></i>
+
+                                <div class="commission-info commission-pro fl">
+                                    <p class="num"><span class="amt">40</span>%</p>
+
+                                    <p class="txt">最高佣金比例</p>
+                                </div>
+                                <i class="line"></i>
+
+                                <div class="commission-info amount fl">
+                                    <p class="num"><span class="amt">90000.00</span>元</p>
+
+                                    <p class="txt">本案应还款</p>
+                                </div>
+                            </div>
+                            <div class="case-info-bd">
+                                <div class="case-info-bd-top clearfix">
+                                    <div class="bd-top-l fl">
+                                        欠款人:<span>钱先生</span>
+                                    </div>
+                                    <div class="bd-top-r fr">
+                                        逾期天数:<span class="out-date b-word">180</span>天
+                                    </div>
+                                </div>
+                                <div class="case-info-bd-btm">
+                                    <p>地址：<span class="address">北京市海淀区中关村大街11号</span></p>
+                                </div>
+                                <div class="sign"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="case-info" style="padding-bottom: 0.47rem;">
+                    <div class="case-info-con">
+                        <a href="../details4.html">
+                            <div class="case-info-hd clearfix">
+                                <div class="commission-info exp-commission fl">
+                                    <p class="num"><span class="amt">36000.00</span>元</p>
+
+                                    <p class="txt">预期可赚佣金</p>
+                                </div>
+                                <i class="line"></i>
+
+                                <div class="commission-info commission-pro fl">
+                                    <p class="num"><span class="amt">40</span>%</p>
+
+                                    <p class="txt">最高佣金比例</p>
+                                </div>
+                                <i class="line"></i>
+
+                                <div class="commission-info amount fl">
+                                    <p class="num"><span class="amt">90000.00</span>元</p>
+
+                                    <p class="txt">本案应还款</p>
+                                </div>
+                            </div>
+                            <div class="case-info-bd">
+                                <div class="case-info-bd-top clearfix">
+                                    <div class="bd-top-l fl">
+                                        欠款人:<span>钱先生</span>
+                                    </div>
+                                    <div class="bd-top-r fr">
+                                        逾期天数:<span class="out-date b-word">180</span>天
+                                    </div>
+                                </div>
+                                <div class="case-info-bd-btm">
+                                    <p>地址：<span class="address">北京市海淀区中关村大街11号</span></p>
+                                </div>
+                                <div class="sign"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 企业已结束暂无任务显示 -->
+                <div class="case-info case-info-nothing clearfix"  style="display: none;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--侧边栏企业信息-->
+    <div class="sidenav">
+        <div class="bg-a"></div>
+        <div class="sidebar" id="side-bar">
+            <div class="siderbar-hd">
+                <a href="companyDetail.html">
+                    <div class="head-img fl">
+                        <img src="../img/head-img.png">
+                    </div>
+                    <div class="company-name fr">上海易催催网络科技有限公司</div>
+                    <i class="icon-arrow"></i>
+                </a>
+            </div>
+            <div class="sidebar-bd">
+                <div class="bd-top-in all-commission">
+                    累计佣金(元)：<span class="bd-top-in-num total-amt">120000.00</span>
+                </div>
+                <div class="bd-top-in ">
+                    公司代码：<span class="bd-top-in-num code-num">123456</span>
+                </div>
+                <div class="sidebar-list">
+                    <ul class="clearfix">
+                        <li class="li1"><a href="../comcase.html">已完成的案子</a></li>
+                        <li class="li2"><a href="staffManage.html">员工管理</a></li>
+                        <li class="li3"><a href="accountBalance.html">账户余额</a></li>
+                        <li class="li4"><a href="cash.html">提现</a></li>
+                        <li class="li5"><a href="myCard.html">我的银行卡</a></li>
+                        <li class="li6"><a href="commissionDirection.html">员工佣金比例</a></li>
+                        <li class="li7"><a href="setting.html">设置</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--确认接单弹窗-->
+    <div class="mask" id="confirm-mask">
+        <div class="popup confirm-popup">
+            <div class="staff-commission">
+                <div class="popup-txt">请先确认员工佣金比例</div>
+                <div class="comm-ratio">
+                    <div class="comm-ratiop">
+                        员工：<input class="comm-ratio-num comm-ratio-num1" type="tel" value="30"> %
+                    </div>
+                    <div class="comm-ratioc">
+                        公司：<input class="comm-ratio-num comm-ratio-num2" type="tel" placeholder="70"
+                                  disabled="disabled"> %
+                    </div>
+                </div>
+
+                <div class="popup-txt">接单之后需要在约定的时间内完成，如果无法完成会影响你的完成率和信用值哦</div>
+            </div>
+            <div class="popup-btn clearfix">
+                <div class="rlt-btn fl">
+                    <a href="javascript:;">考虑一下</a>
+                </div>
+                <div class="btns confirm-btn fl">
+                    <a href="javascript:;">马上接单</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 拒绝接单弹窗-->
+    <div class="mask" id="refuse-mask">
+        <div class="popup refuse-popup">
+            <div class="popup-txt">
+                <ul>
+                    <li>预期可赚佣金<span>30000.00</span></li>
+                    <li>最高佣金比例<span>40%</span></li>
+                    <li>本案应还款<span>83587.00</span></li>
+                </ul>
+                <div class="popup-txt-con">
+                    <p>您确定要拒绝本单吗</p>
+
+                    <p>拒绝接单还会影响您的信用值哦</p>
+                </div>
+            </div>
+            <div class="popup-btn clearfix">
+                <div class="rlt-btn fl">
+                    <a href="javascript:;">考虑一下</a>
+                </div>
+                <div class="btns refuse-btn fl">
+                    <a href="javascript:;">确定拒单</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 分配任务弹窗 -->
+    <div class="mask" id="task-mask">
+        <div class="popup task-popup">
+            <form id="form">
+                <div class="form popup-bd">
+                    <div class="radio-btn check-btn">
+                        <input type="button" name="a" id="a" class="origin-input">
+                        <label for="a">员工一</label>
+                    </div>
+                    <div class="radio-btn check-btn">
+                        <input type="button" name="b" id="b" class="origin-input">
+                        <label for="b">员工二</label>
+                    </div>
+                    <div class="radio-btn check-btn">
+                        <input type="button" name="c" id="c" class="origin-input">
+                        <label for="c">员工三</label>
+                    </div>
+                    <div class="radio-btn check-btn">
+                        <input type="button" name="d" id="d" class="origin-input">
+                        <label for="d">员工四</label>
+                    </div>
+                    <div class="radio-btn check-btn">
+                        <input type="button" name="e" id="e" class="origin-input">
+                        <label for="e">员工五</label>
+                    </div>
+                    <div class="radio-btn check-btn">
+                        <input type="button" name="f" id="f" class="origin-input">
+                        <label for="f">员工六</label>
+                    </div>
+                </div>
+                <div class="popup-btn clearfix">
+                    <div class="rlt-btn fl">
+                        <a href="javascript:;">取消</a>
+                    </div>
+                    <div class="btns dis-btn fl " id="btn">
+                        <a href="javascript:;">确认</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!--错误提示弹窗 B-->
+<div class="fault">
+    <div class="fault-txt">
+        <div class="fault-txt-info">手机号码格式错误</div>
+        <input type="button" value="确认"/>
+    </div>
+</div>
+<!--错误提示弹窗 E-->
+
+</body>
+<script src="../js/indexAjax.js"></script>
+<script>
+    //设置佣金比例 B
+    var company = document.querySelector(".comm-ratio-num2");
+    var person = document.querySelector(".comm-ratio-num1");
+    person.onkeyup = function () {
+        if (person.value > 100) {
+            person.value = "";
+        } else {
+            company.value = 100 - person.value;
+        }
+    }
+    //设置佣金比例 E
+
+    //首页滑动 B
+    var mySwiper = new Swiper('.swiper-container',{
+        onSlideChangeEnd: function(swiper){
+            var index = swiper.activeIndex;
+            if(index == 0){
+                $('#nav-tab li:nth-child(1)').addClass("on").siblings().removeClass("on");
+            } else if(index == 1){
+                $('#nav-tab li:nth-child(2)').addClass("on").siblings().removeClass("on");
+            } else if(index == 2){
+                $('#nav-tab li:nth-child(3)').addClass("on").siblings().removeClass("on");
+            } else if(index == 3){
+                $('#nav-tab li:nth-child(4)').addClass("on").siblings().removeClass("on");
+            }
+        }
+    })
+    $('#nav-tab li:nth-child(1)').click(function(){
+        mySwiper.slideTo(0, 1000, false);
+        $(this).addClass("on").siblings().removeClass("on");
+    });
+    $('#nav-tab li:nth-child(2)').click(function(){
+        mySwiper.slideTo(1, 1000, false);
+        $(this).addClass("on").siblings().removeClass("on");
+    });
+    $('#nav-tab li:nth-child(3)').click(function(){
+        mySwiper.slideTo(2, 1000, false);
+        $(this).addClass("on").siblings().removeClass("on");
+    });
+    $('#nav-tab li:nth-child(4)').click(function(){
+        mySwiper.slideTo(3, 1000, false);
+        $(this).addClass("on").siblings().removeClass("on");
+    });
+    //首页滑动 E
+
+    //案子详情确认接单/拒单进入该页面 B
+    var cin = window.location.search.substring(1);
+    if(cin == "1"){
+        mySwiper.slideTo(1, 1000, false);
+        $('#nav-tab li:nth-child(2)').addClass("on").siblings().removeClass("on");
+    } else if(cin == "2"){
+        mySwiper.slideTo(3, 1000, false);
+        $('#nav-tab li:nth-child(4)').addClass("on").siblings().removeClass("on");
+    } else if(cin == "3"){
+        mySwiper.slideTo(2, 1000, false);
+        $('#nav-tab li:nth-child(3)').addClass("on").siblings().removeClass("on");
+    }
+    //案子详情确认接单/拒单进入该页面 E
+</script>
+</html>
+
+

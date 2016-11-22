@@ -1,0 +1,38 @@
+.fault {
+    display: none;
+    width: 3.75rem;
+    height: 6.67rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.fault-txt {
+    width: 2.9rem;
+    height: 1.5rem;
+    background-color: #fff;
+    border-radius: 0.03rem;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -1.45rem;
+}
+.fault-txt-info {
+    margin: 0.3rem 0.2rem;
+    width: 2.5rem;
+    height: 0.3rem;
+    text-align: center;
+    font-size: 0.2rem;
+}
+.fault-txt input {
+    width: 2.5rem;
+    height: 0.4rem;
+    margin-left: 0.2rem;
+    border-radius: 0.03rem;
+    background-color: #339df5;
+    color: #ffffff;
+    font-size: 0.2rem;
+}

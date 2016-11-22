@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>易催催</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/fault.css"/>
+	<script type="text/javascript" src='../js/jquery-1.12.1.min.js'></script>
+    <script type="text/javascript" src='../js/page.js'></script>
+    <script type="text/javascript" src='../js/popup.js'></script>
+	<script type="text/javascript">
+   (function(designW){var prevScreenW = null;function resize(){var screenW = window.innerWidth;if (prevScreenW == screenW){return}else{prevScreenW = screenW}document.documentElement.style.fontSize = 100 * screenW / designW + "px"}window.onresize = function(){resize()};resize();window.onload = function(){resize()}})(375);
+	</script>
+
+</head>
+<body>
+	<div class="wrap">
+	<!-- 顶部 -->
+		<div class="top">
+			<div class="top-in">
+				<div class="top-l fl head-back"><a href="javascript:;"></a></div>
+				忘记密码
+				<div class="top-r fr"><a href="javascript:;"></a></div>
+			</div>
+		</div>
+	
+
+	<!-- 忘记密码第二步 -->
+	<div class="form forgetpwd forgetpwd2">
+	    <form id="form2">
+	        <div class="input-wrp first">
+	            <input type="password" placeholder="请输入新密码" autocomplete="off" id="newPassWord1" name="newPassWord1">
+	        </div>
+	        <div class="input-wrp">
+	            <input type="password" placeholder="请再次输入密码" autocomplete="off" id="newPassWord2" name="newPassWord2">
+	        </div>
+	        <div class="btns" id="btn">
+	            <a href="javascript:;">完成</a>
+	        </div>
+	    </form>	    
+	</div>
+	</div>
+	<!--错误提示弹窗 B-->
+	<div class="fault">
+		<div class="fault-txt">
+			<div class="fault-txt-info"></div>
+			<input type="button" value="确认"/>
+		</div>
+	</div>
+	<!--错误提示弹窗 E-->
+</body>
+<script src="../js/forgetPwdAjax.js"></script>
+</html>

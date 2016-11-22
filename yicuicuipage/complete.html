@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <!--申明当前页面的编码集-->
+    <meta charset="UTF-8">
+    <!--网页标题-->
+    <title>易催催</title>
+    <!--网页关键词-->
+    <meta name="keywords" content="易催催" />
+    <!--网页描述-->
+    <meta name="description" content="" />
+    <!--适配当前屏幕-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!--禁止自动识别电话号码-->
+    <meta name="format-detection" content="telephone=no" />
+    <!--禁止自动识别邮箱-->
+    <meta content="email=no" name="format-detection" />
+    <!--iphone中safari私有meta标签,允许全屏模式浏览,隐藏浏览器导航栏-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!--iphone中safari顶端的状态条的样式black(黑色)-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/complete.css"/>
+    <script>
+        (function (designW) {
+            var prevScreenW = null;
+
+            function resize() {
+                var screenW = window.innerWidth;
+                if (prevScreenW == screenW) {
+                    return
+                } else {
+                    prevScreenW = screenW
+                }
+                document.documentElement.style.fontSize = 100 * screenW / designW + "px"
+            }
+
+            window.onresize = function () {
+                resize()
+            };
+            resize();
+            window.onload = function () {
+                resize()
+            }
+        })(375);
+    </script>
+</head>
+<body>
+    <!--头部 B-->
+    <div class="head">
+        <div class="head-cancel fl"></div>
+        <div class="head-info fl">完成任务</div>
+        <div class="head-alter fr"><a href="home.html?1"></a></div>
+    </div>
+    <!--头部 E-->
+
+    <!--完成情况 B-->
+    <div class="info">
+        <p>请选择完成情况</p>
+        <form id="form">
+            <ul>
+                <li><i class="first"></i> 全部还清</li>
+                <li class="op"><i class="can"></i> 按月等额</li>
+                <li class="op"><i class="can"></i> 按月不等额</li>
+                <li class="op"><i class="can"></i> 按次等额</li>
+                <li class="op"><i class="can"></i> 按次不等额</li>
+                <li class="op a"><b></b> 最后一笔</li>
+            </ul>
+            <input type="tel" placeholder="请输入还款金额" class="cash"/> 元
+            <div class="info-pic clearfix">
+                <h2>请上传银行流水（最多上传3张）</h2>
+                <div class="info-pic-add fl">
+                    <div class="info-pic-add-icon"></div>
+                    <div class="info-pic-add-info">银行流水</div>
+                    <input type="file"/>
+                </div>
+                <div class="info-pic-add fl">
+                    <div class="info-pic-add-icon"></div>
+                    <div class="info-pic-add-info">银行流水</div>
+                    <input type="file"/>
+                </div>
+                <div class="info-pic-add fl">
+                    <div class="info-pic-add-icon"></div>
+                    <div class="info-pic-add-info">银行流水</div>
+                    <input type="file"/>
+                </div>
+            </div>
+            <input type="button" value="确定" class="info-btn" id="btn"/>
+        </form>
+    </div>
+    <!--完成情况 E-->
+
+    <!--接单弹窗 B-->
+    <div class="popup">
+        <!--完成任务 B-->
+        <div class="popup-complete">
+            <div class="popup-complete-info">
+                请求提交成功，我们会在工作日的 <span>X</span>小时内完后审核，请耐心等待
+            </div>
+            <a href="details6.html"><input type="button" value="确定" class="popup-complete-btn"/></a>
+        </div>
+        <!--完成任务 E-->
+    </div>
+    <!--接单弹窗 E-->
+</body>
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/home.js"></script>
+<script src="js/completeAjax.js"></script>
+</html>

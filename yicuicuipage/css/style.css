@@ -1,0 +1,1806 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    color: #5a667c;
+}
+
+body {
+    background-color: #eaedf2;
+}
+
+.wrap {
+    width: 3.75rem;
+    height: 100%;
+}
+
+
+/*蓝色背景按钮样式*/
+
+.btns {
+    width: 2.90rem;
+    height: 0.43rem;
+    border-radius: 2px;
+    background-color: #339df5;
+}
+#register {
+    color: #ffffff;
+    font-size: 0.17rem;
+}
+.btns a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 0.17rem;
+    text-align: center;
+    line-height: 0.42rem;
+}
+
+
+/*白色背景按钮样式*/
+
+.rlt-btn {
+    width: 1.46rem;
+    height: .41rem;
+    border-radius: 2px;
+    border: solid 1px #339df5;
+}
+
+.rlt-btn a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: .17rem;
+    text-align: center;
+    line-height: 0.43rem;
+    color: #339df5;
+}
+
+
+/*蓝色字体样式*/
+
+.b-word {
+    color: #339df5;
+}
+
+/*红色色字体样式*/
+.r-word {
+    color: #f13f1a;
+}
+
+
+/*盒子边框阴影样式*/
+
+.shadow {
+    box-shadow: 0 0.5px 0 0 #d0d5df, 0 -0.5px 0 0 #d0d5df;
+}
+
+
+/*顶部结构样式*/
+
+.top {
+    width: 3.75rem;
+    height: 0.44rem;
+    background-color: #133c8b;
+}
+
+.top .top-in {
+    width: 3.35rem;
+    height: 0.44rem;
+    padding: 0 0.2rem;
+    font-size: 0.19rem;
+    text-align: center;
+    line-height: 0.44rem;
+    color: #ffffff;
+}
+
+.top-l,
+.top-r {
+    width: 0.24rem;
+    height: 0.24rem;
+    margin-top: 0.1rem;
+    background: url(../img/qx.png) no-repeat;
+    background-size: contain;
+}
+
+.top-l a,
+.top-r a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.top-r {
+    background: url(../img/home.png) no-repeat;
+    background-size: contain;
+}
+
+
+/*顶部侧边栏出现按钮*/
+
+.msg-btn,
+.news {
+    margin-top: 0.15rem;
+}
+
+.msg-btn {
+    background: url(../img/icon-drawer.png) no-repeat;
+    background-size: contain;
+}
+
+
+/*顶部消息按钮样式*/
+
+.news {
+    background: url(../img/news.png) no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.news .news-point {
+    display: block;
+    width: 0.08rem;
+    height: 0.08rem;
+    border-radius: 50%;
+    background: #f13f1a;
+    position: absolute;
+    top: 0;
+    right: -0.04rem;
+}
+
+
+/*顶部返回按钮*/
+
+.back-btn {
+    background: url(../img/icon-close.png) no-repeat;
+    background-size: 0.24rem 0.24rem;
+}
+
+
+/*注册页面样式*/
+
+.form {
+    width: 2.9rem;
+    margin: 0 0 0.2rem;
+    padding: 0.4rem 0.43rem 0 0.42rem;
+}
+
+.form .input-wrp {
+    width: 2.9rem;
+    height: 0.42rem;
+    margin-bottom: 0.16rem;
+    color: #adb8ce;
+}
+
+.form .input-wrp input {
+    width: 2.75rem;
+    height: 0.22rem;
+    line-height: 0.22rem;
+    padding: 0.1rem 0 0.1rem 0.15rem;
+    border-radius: 2px;
+    background-color: #f6f7f9;
+    box-shadow: inset 0 0.5px 0 0 #d0d5df;
+    font-size: 0.17rem;
+    outline: none;
+    color: #5a667c;
+}
+
+.form .input-wrp input::input-placeholder {
+    color: #adb8ce;
+}
+
+.form .input-wrp input::-webkit-input-placeholder {
+    color: #adb8ce;
+}
+
+.form .captcha {
+    position: relative;
+}
+
+.form .input-wrp .getCaptch {
+    width: 1.25rem;
+    font-size: 0.16rem;
+    height: 0.42rem;
+    line-height: 0.22rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    background: #f6f7f9;
+    color: #339df5;
+}
+.form .input-wrp.area {
+    position: relative;
+}
+
+.form .input-wrp .choose-area {
+    width: 2.75rem;
+    height: 0.42rem;
+    line-height: 0.42rem;
+    padding-left: 0.15rem;
+    border-radius: 2px;
+    background-color: #f6f7f9;
+    box-shadow: inset 0 0.5px 0 0 #d0d5df;
+    font-size: 0.17rem;
+    color: #adb8ce;
+}
+
+.form .input-wrp.area .icon-next {
+    display: block;
+    width: 0.16rem;
+    height: 0.16rem;
+    background: url(../img/icon-next.png) no-repeat;
+    position: absolute;
+    top: 0.13rem;
+    right: 0.08rem;
+}
+
+
+/*错误提示样式*/
+
+.form .noticeText {
+    display: block;
+    height: 0.23rem;
+    font-size: 0.13rem;
+    color: #f13f1a;
+}
+
+
+/*单选按钮样式*/
+
+.radio-btn {
+    width: 2.8rem;
+    height: 0.3rem;
+    margin: 0 auto;
+    font-size: 0.13rem;
+    position: relative;
+}
+
+.radio-btn .origin-input {
+    display: inline-block;
+    width: 0.16rem;
+    height: 0.16rem;
+    margin: 0 0.07rem 0 0.03rem;
+    outline: none;
+    position: relative;
+    border-radius: 50%;
+    background: #fff url('../img/checkbox.png') no-repeat;
+    background-size: 0.16rem 0.16rem;
+    vertical-align: middle;
+}
+
+.radio-btn .cur {
+    background: #fff url('../img/checkbox-0.png') no-repeat;
+    background-size: 0.16rem;
+    vertical-align: middle;
+}
+
+.form .register .btns {
+    margin-bottom: 0.5rem;
+}
+
+.form .prompt {
+    width: 2.9rem;
+    height: 0.35rem;
+    margin: 0.3rem auto;
+    font-size: .17rem;
+    text-align: center;
+    line-height: 0.35rem;
+}
+
+
+/*注册成功后认证页*/
+
+.renzheng .suc {
+    width: 2.9rem;
+    height: 0.56rem;
+    margin: 0.8rem auto 0.12rem;
+    font-size: 0.19rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.renzheng ul {
+    width: 2.9rem;
+    margin: 0 auto;
+}
+
+.renzheng ul li {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.renzheng ul li a {
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.renzheng ul li img {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    margin: 0.1rem auto 0;
+}
+
+.renzheng ul li p {
+    width: 100%;
+    margin-top: 0.17rem;
+    font-size: 0.19rem;
+    text-align: center;
+}
+
+
+/*注册信息*/
+
+.form .area {
+    margin-bottom: 0.82rem
+}
+
+
+/*个人认证*/
+
+.per-renzheng,
+.com-renzheng {
+    padding-bottom: 0.3rem;
+}
+
+.per-renzheng .text {
+    width: 2.9rem;
+    margin: 0.14rem auto 0.41rem;
+    font-size: 0.13rem;
+}
+
+
+/*认证页上传按钮*/
+
+.form .input-wrp.inputfile {
+    width: 3rem;
+    overflow: hidden;
+    height: auto;
+    padding-top: .2rem;
+    margin-bottom: 0.15rem;
+}
+
+.form .input-wrp .select-filein span {
+    display: block;
+    margin-top: 0.38rem;
+    font-size: .12rem;
+    text-align: center;
+}
+.selectin-wrap{
+    /*width: 0.63rem;*/
+    height: 0.63rem;
+    position: relative;
+    float: left;
+    margin-bottom: 0.15rem;
+    margin-right: 0.35rem;
+}
+.form .input-wrp .select-filein {
+    width: 0.61rem;
+    height: 0.61rem;
+    border: 1px dashed #339df5;
+    background: url(../img/jia.png) 50% 30% no-repeat;
+    background-size: 0.15rem 0.16rem;
+    z-index: 11;
+    float: left;
+
+}
+
+.form .input-wrp .select-filein .common_file {
+    width: 0.63rem;
+    height: 0.63rem;
+    outline: medium none;
+    position: absolute;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    z-index: 5;
+    padding: 0;
+    line-height: 0;
+    border-radius: none;
+    box-shadow: none;
+    font-size: 0;
+}
+.form .input-wrp.inputfile .perview{
+    width: 0.63rem;
+    height: 0.63rem;
+    float: left;
+    position: relative;
+}
+
+.form .input-wrp.inputfile .perview img {
+    display: block;
+    width: 0.63rem;
+    height: 0.63rem;
+}
+
+.form .input-wrp.inputfile .perview .del {
+    height: .2rem;
+    position: absolute;
+    bottom: -0.03rem;
+    right: -0.3rem;
+    font-style: normal;
+    font-size: .12rem;
+}
+
+
+/*登录页*/
+
+.login .forget-pwd {
+    width: 2.9rem;
+    height: 0.5rem;
+    margin: 0 auto;
+    text-align: right;
+    line-height: 0.5rem;
+}
+
+.login .forget-pwd a {
+    font-size: 0.17rem;
+}
+
+.login .btns {
+    margin-top: 1.1rem;
+}
+
+
+/********提交结果页面********/
+
+.subm-result .sbm-rlt-hd {
+    width: 1.84rem;
+    height: 1.41rem;
+    margin: 0 auto 0.27rem;
+}
+
+.subm-result .fail-hd {
+    background: url("../img/fail-bg.png") no-repeat;
+    background-size: contain;
+}
+
+.subm-result .succ-hd {
+    background: url("../img/success-bg.png") no-repeat;
+    background-size: contain;
+}
+
+.subm-result .sbm-rlt-info {
+    width: 1.55rem;
+    text-align: center;
+    margin: 0 auto 0.6rem;
+    color: #133c8b;
+}
+
+.subm-result .sbm-rlt-info.succ-info {
+    width: 1.95rem;
+}
+
+.subm-result .sbm-rlt-info h4 {
+    font-size: .19rem;
+    font-weight: normal;
+}
+
+.subm-result .sbm-rlt-info p {
+    font-size: .15rem;
+    margin-top: 0.03rem;
+    font-weight: 300;
+}
+
+.subm-result .rlt-btn,
+.subm-succ .rlt-btn {
+    margin: 0 auto;
+}
+
+
+/*忘记密码页*/
+.forgetpwd2 {
+    display: block;
+}
+.forgetpwd .btns {
+    margin-top: 0.8rem;
+}
+
+
+/* ************************公司信息页面**************************/
+
+
+/*导航*/
+
+.case-nav-list .hd {
+    width: 3.45rem;
+    height: .72rem;
+    padding: 0 .15rem;
+    background: #133c8b;
+}
+
+.case-nav-list .hd ul li {
+    width: 25%;
+    height: 0.72rem;
+    line-height: 0.72rem;
+    float: left;
+    font-size: 0.15rem;
+    text-align: center;
+    position: relative;
+}
+
+.case-nav-list .hd ul li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+.case-nav-list .hd ul li.on {
+    font-size: 0.17rem;
+    color: #fff;
+}
+
+.case-nav-list .hd ul li.on::after {
+    display: block;
+}
+
+.case-nav-list .hd li::after {
+    display: none;
+    width: 0;
+    height: 0;
+    content: '';
+    border: 0.06rem solid transparent;
+    border-bottom-color: #fff;
+    position: absolute;
+    bottom: -0.01rem;
+    left: 0.35rem;
+}
+
+.case-nav-list .bd {
+    overflow: hidden;
+}
+
+
+/*待分配单子样式*/
+
+.case-info {
+    width: 3.49rem;
+    padding: 0.23rem 0.12rem 0.25rem 0.14rem;
+    background: #fff;
+    margin-bottom: 0.09rem;
+    position: relative;
+}
+
+.case-info .case-info-con {
+    width: 3.49rem;
+}
+
+.case-info .case-info-con a {
+    display: block;
+    width: 100%;
+    color: #5a667c;
+}
+
+.case-info .case-info-hd {
+    position: relative;
+}
+
+.case-info .case-info-hd .commission-info {
+    width: 33%;
+    text-align: center;
+}
+
+.case-info .case-info-hd .commission-info .num {
+    font-size: .13rem;
+    font-weight: 500;
+}
+
+.commission-info .num .amt {
+    font-size: .19rem;
+    font-weight: 500;
+    margin-right: 0.03rem;
+}
+
+.commission-info .txt {
+    font-size: .13rem;
+    color: #adb8ce;
+}
+
+.line {
+    display: inline-block;
+    width: 0px;
+    height: 0.272rem;
+    border-left: solid 1px #d0d5df;
+    float: left;
+    margin-top: 0.1rem;
+}
+
+.case-info .case-info-bd {
+    margin-top: 0.11rem;
+}
+
+.case-info-bd-top {
+    font-size: .16rem;
+    text-align: center;
+}
+
+.bd-top-l {
+    background: url("../img/icon-borrower.png") left center no-repeat;
+    background-size: 0.14rem 0.16rem;
+    padding-left: 0.18rem;
+}
+
+.bd-top-r {
+    background: url(../img/icon-clock-grown.png) left center no-repeat;
+    background-size: 0.17rem 0.17rem;
+    padding-left: 0.2rem;
+    margin-right: 0.1rem;
+}
+
+.bd-top-r .out-date {
+    font-size: .16rem;
+    font-weight: 500;
+}
+
+.case-info-bd-btm {}
+
+.case-info-bd-btm p {
+    width: 100%;
+    margin-top: 0.1rem;
+    font-size: .13rem;
+}
+
+.case-info-bd-btm .expiry-date {
+    font-size: .13rem;
+    font-weight: 500;
+}
+
+.company-status .case-info .btns {
+    margin: 0.25rem auto 0;
+}
+
+.company-status .case-info .refuse {
+    margin: 0.25rem 0.33rem 0 0.11rem;
+}
+
+.company-status .case-info .receive {
+    width: 1.46rem;
+    margin: 0.25rem 0 0;
+}
+
+/*企业待接单栏无任务样式*/
+.case-info.case-info-nothing{
+    height: 5.12rem;
+}
+.case-info.case-info-nothing .case-info-hd{
+    width: 1.84rem;
+    height: 1.54rem;
+    background: url(../images/noting.png) no-repeat;
+    background-size: contain;
+    margin: 0.38rem 0.88rem 0.14rem 1.03rem;
+}
+
+.case-info.case-info-nothing .case-info-bd{
+    width: 1.84rem;
+    margin: 0 0.88rem 0 1.03rem ;
+}
+.case-info.case-info-nothing .case-info-bd h4{
+    padding:0 0.08rem;
+    font-size: .19rem;
+    font-weight: normal;
+    color: #133c8b;
+}
+.case-info.case-info-nothing .case-info-bd p{
+    padding:0.07rem 0.1rem 0 0.2rem;
+    font-size: .15rem;
+    color: #133c8b;
+}
+.case-info.case-info-nothing .refresh-btn{
+    margin: 0.84rem auto 0;
+}
+
+
+
+
+/*企业进行中样式(催收员)*/
+
+
+.collectors {
+    margin-top: 0.15rem;
+    text-align: right;
+    font-size: .13rem;
+}
+
+.collectors .collt-name {
+    margin-right: 0.16rem;
+}
+
+
+/*已结束   成功/失败标志*/
+
+.sign {
+    width: 0.72rem;
+    height: 0.62rem;
+    background: url(../img/ok.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+/*公司个人信息侧边栏信息样式*/
+
+.sidebar {
+    width: 2.9rem;
+    height: 100%;
+    background: linear-gradient(340deg, rgba(44, 151, 240, .95), rgba(19, 73, 176, .95));
+    position: fixed;
+    top: 0;
+    left: -2.9rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 999;
+}
+.bg-a {
+    z-index: 999;
+}
+.sidebar .siderbar-hd {
+    width: 2.43rem;
+    height: 0.64rem;
+    margin: 0.32rem 0.22rem 0.2rem 0.25rem;
+    position: relative;
+}
+
+.sidebar .siderbar-hd a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.head-img {
+    width: 0.64rem;
+    height: 0.64rem;
+}
+
+.head-img img {
+    display: block;
+    width: 0.64rem;
+    height: 0.64rem;
+}
+
+.company-name {
+    width: 1.65rem;
+    height: 0.54rem;
+    padding: 0.1rem 0 0 0.13rem;
+    color: #fff;
+    line-height: 0.27rem;
+    font-size: .17rem;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.bg-a {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+
+/* 滚动槽 */
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow:  rgba(0, 0, 0, 0);
+    /*border-radius: 0.1rem;*/
+}
+
+
+/* 滚动条滑块 */
+
+::-webkit-scrollbar-thumb {
+    /*border-radius: 0.1rem;*/
+    background: rgba(0, 0, 0, 0);
+    -webkit-box-shadow: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255, 0, 0, 0);
+}
+
+
+/*侧边栏小箭头*/
+
+.icon-arrow {
+    display: none;
+    width: 0.11rem;
+    height: 0.19rem;
+    background: url("../img/combined-shape.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.1rem;
+    right: -0.06rem;
+}
+
+.bd-top-in {
+    width: 2.67rem;
+    height: 0.25rem;
+    padding-left: 0.23rem;
+    line-height: 0.25rem;
+    font-size: 0.13rem;
+    color: #ffffff;
+}
+
+.bd-top-in .bd-top-in-num {
+    font-size: 0.18rem;
+    font-weight: 500;
+}
+
+.sidebar-list {
+    width: 2.66rem;
+    height: auto;
+    margin-left: 0.24rem;
+    margin-top: 0.33rem;
+}
+
+.sidebar-list li {
+    width: 2.3rem;
+    height: 0.52rem;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.22);
+    padding-left: 0.36rem;
+    background: url(../img/icon-case.png) left 0.14rem no-repeat;
+    background-size: 0.24rem;
+}
+
+.sidebar-list li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: .15rem;
+    line-height: 0.52rem;
+    color: #ffffff;
+}
+
+.sidebar-list li.li2 {
+    background: url(../img/xiaoren.png) left 0.14rem no-repeat;
+    background-size: 0.24rem;
+}
+
+.sidebar-list li.li3 {
+    background: url(../img/oval-10.png) left 0.14rem no-repeat;
+    background-size: 0.24rem;
+}
+
+.sidebar-list li.li4 {
+    background: url(../img/rectangle-13.png) left 0.14rem no-repeat;
+    background-size: 0.25rem 0.24rem;
+}
+
+.sidebar-list li.li5 {
+    background: url(../img/rectangle-16.png) left 0.14rem no-repeat;
+    background-size: 0.24rem;
+}
+
+.sidebar-list li.li6 {
+    background: url(../img/yjbl.png) left 0.14rem no-repeat;
+    background-size: 0.23rem 0.24rem;
+}
+
+.sidebar-list li.li7 {
+    background: url(../img/polygon-2.png) left 0.14rem no-repeat;
+    background-size: 0.23rem 0.24rem;
+}
+
+
+/*员工管理页*/
+
+.staff-list {
+    width: 3.75rem;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.staff-list ul li {
+    width: 3.46rem;
+    height: .48rem;
+    padding: 0.16rem 0.13rem 0.16rem 0.16rem;
+    box-shadow: 0 -0.5px 0 0 #d0d5df;
+    position: relative;
+    border-bottom: 1px solid #d0d5df;
+}
+
+.staff-list ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.staff-list ul li .staff-img {
+    width: 0.48rem;
+    height: 0.48rem;
+    border-radius: 50%;
+    margin-right: 0.08rem;
+}
+
+.staff-list ul li .staff-img img {
+    display: block;
+    width: 0.48rem;
+    height: 0.48rem;
+}
+
+.staff-list ul li .staff-info {
+    width: 2.9rem;
+}
+
+.staff-list ul li .staff-info p {
+    font-size: .16rem;
+    font-weight: 500;
+    line-height: 0.24rem;
+    overflow: hidden;
+    color: #5a667c;
+}
+
+.staff-list ul li .staff-info p.staff-phone {
+    font-size: .13rem;
+    color: #adb8ce;
+    font-weight: normal;
+}
+
+
+/*员工管理小箭头*/
+
+.staff-arrow {
+    display: block;
+    width: 0.06rem;
+    height: 0.12rem;
+    background: url("../img/staff-arrow.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.06rem;
+    right: 0.15rem;
+}
+
+
+/*员工详情页*/
+
+.del-staff {}
+
+.del-staff a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0.13rem;
+    text-align: right;
+    color: #ffffff;
+}
+
+.staff-detail {
+    width: 3.43rem;
+    height: 0.64rem;
+    padding: 0.26rem 0.16rem;
+    background-color: #133c8b;
+}
+
+.staff-detail .staff-img2 {
+    width: 0.64rem;
+    height: 0.64rem;
+    border-radius: 50%;
+    margin-right: 0.16rem;
+}
+
+.staff-detail .staff-img2 img {
+    display: block;
+    width: 0.64rem;
+    height: 0.64rem;
+}
+
+.staff-info2 {
+    width: 2.6rem;
+}
+
+.staff-info2 p {
+    font-size: .19rem;
+    font-weight: 500;
+    line-height: 0.32rem;
+    color: #ffffff;
+    overflow: hidden;
+    width: 2.6rem;
+    height: .32rem;
+}
+
+.staff-info2 p.staff-phone2 {
+    font-size: .16rem;
+    font-weight: normal;
+    color: #fff;
+}
+
+.staff-case {
+    width: 3.43rem;
+    height: 0.65rem;
+    padding: 0.2rem 0.16rem;
+    background-color: #ffffff;
+    box-shadow: 0 0.5px 0 0 #d0d5df, 0 -0.5px 0 0 #d0d5df;
+    margin-bottom: 0.08rem;
+}
+
+.staff-case .total-case,
+.staff-case .total-commission {
+    font-size: .16rem;
+}
+
+.staff-case .total-case .total-case-num,
+.staff-case .total-commission .total-commission-num {
+    margin-left: 0.1rem;
+}
+
+.staff-case-list {
+    width: 3.04rem;
+    height: 0.28rem;
+    margin: 0 auto;
+}
+
+.staff-case-list li {
+    width: 0.76rem;
+    height: 0.28rem;
+    float: left;
+    line-height: 0.28rem;
+}
+
+.staff-case-list li a {
+    font-size: .13rem;
+    color: #adb8ce;
+}
+
+.staff-case-list li a span {
+    margin-left: 0.05rem;
+}
+
+.staff-bd-info {
+    width: 3.75rem;
+}
+
+.tasking {
+    width: 3.59rem;
+    height: .36rem;
+    padding-left: 0.16rem;
+    background: #ffffff;
+    box-shadow: 0 0.5px 0 0 #d0d5df, 0 -0.5px 0 0 #d0d5df;
+    line-height: 0.36rem;
+    font-size: .13rem;
+}
+
+.staff-case-info {
+    width: 3.75rem;
+}
+
+.staff-case-info a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #5a667c;
+}
+
+.staff-bd-info .case-begin {
+    margin-bottom: 0;
+}
+
+/*弹窗*/
+.mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .66);
+    display: none;
+    z-index: 999;
+}
+
+.popup {
+    width: 3.23rem;
+    border-radius: 4px;
+    background: #ffffff;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 1.01rem;
+    left: 50%;
+    margin-left: -1.61rem;
+}
+
+.popup .popup-hd {
+    width: 2.59rem;
+    height: 0.58rem;
+    margin: 0 auto;
+}
+
+.popup .popup-hd h4 {
+    width: 2.59rem;
+    height: 0.58rem;
+    border-bottom: solid 0.5px #d0d5df;
+    font-size: .18rem;
+    font-weight: 500;
+    line-height: 0.58rem;
+    text-align: center;
+}
+
+.popup .popup-bd {
+    width: 2.59rem;
+    margin: 0rem auto;
+    padding: 0.15rem 0;
+}
+
+.popup .popup-bd .radio-btn {
+    width: 2.59rem;
+    margin-bottom: 0.1rem;
+}
+
+.popup .popup-btn {
+    width: 3.23rem;
+    margin: 0.2rem 0 0.24rem;
+}
+
+.popup .popup-btn .rlt-btn {
+    width: 1.4rem;
+    height: 0.41rem;
+    margin: 0 0.15rem;
+}
+
+.popup .popup-btn .btns {
+    width: 1.4rem;
+    height: 0.43rem;
+    margin-bottom: 0;
+}
+
+
+/*可选做区域弹窗*/
+
+.area-popup {
+    top: 0.5rem;
+}
+.province-popup {
+    top: 0.5rem;
+}
+.province{
+    max-height:3.5rem;
+    overflow-y: auto; 
+}
+.area-popup .popup-bd {
+    border-bottom: solid 0.5px #d0d5df;
+}
+
+.area-popup .radio-btn {
+    position: relative;
+}
+
+.area-popup .area-arrow {
+    display: block;
+    width: 0.3rem;
+    height: 0.3rem;
+    background: url(../img/icon-next-gray.png) top center no-repeat;
+    background-size: 0.09rem 0.15rem;
+    position: absolute;
+    right: 0rem;
+    margin-top: -0.16rem;
+}
+
+.area-popup .popup-btn {
+    margin: 0.2rem 0 0.21rem;
+}
+
+
+/*确认接单弹框*/
+
+.confirm-popup {
+    top: 1.5rem;
+}
+
+.confirm-popup .staff-commission {
+    width: 2.62rem;
+    padding: 0.3rem;
+}
+
+.confirm-popup .popup-txt {
+    line-height: 0.25rem;
+    font-size: 0.16rem;
+}
+
+.confirm-popup .comm-ratio {
+    width: 2.6rem;
+    font-size: 0.16rem;
+    line-height: 0.3rem;
+    margin: 0.08rem 0 0.12rem;
+}
+
+.confirm-popup .comm-ratio .comm-ratio-num {
+    display: inline-block;
+    width: 1.8rem;
+    height: 0.25rem;
+    font-size: 0.16rem;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 2px;
+    color: #5a667c;
+}
+
+.confirm-popup .comm-ratio .comm-ratioc span {
+    color: #adb8ce;
+    background: #f2f2f2;
+}
+
+.confirm-popup .comm-ratio .comm-ratioc {
+    margin-top: 0.1rem;
+}
+
+
+/*拒绝接单弹框*/
+
+.refuse-popup {
+    top: 1.54rem;
+}
+
+.refuse-popup .popup-txt {
+    width: 2.59rem;
+    margin: 0rem auto;
+    font-size: .16rem;
+    line-height: 0.3rem;
+}
+
+.refuse-popup .popup-txt ul {
+    width: 2.59rem;
+    border-bottom: solid 0.5px #d0d5df;
+    padding: 0.17rem 0 0.13rem;
+}
+
+.refuse-popup .popup-txt ul li {
+    width: 2.59rem;
+    height: 0.3rem;
+}
+
+.refuse-popup .popup-txt ul li span {
+    display: inline-block;
+    float: right;
+    text-align: right;
+    color: #4a90e2;
+}
+
+.refuse-popup .popup-txt .popup-txt-con {
+    width: 2.59rem;
+    margin: 0.1rem auto;
+}
+
+.refuse-popup .popup-txt .popup-txt-con p {
+    font-weight: 500;
+    text-align: center;
+}
+
+
+/*分配员工弹窗*/
+.task-popup .popup-bd{
+    max-height:3.5rem;
+    overflow-y: auto;
+}
+
+/*提现成功弹窗*/
+
+.bind-card .bindcard-popup {
+    top: 1.8rem;
+}
+
+.bind-card .bindcard-popup .popup-txt {
+    height: 0.3rem;
+    text-align: center;
+    font-size: 0.16rem;
+    line-height: 0.3rem;
+    margin-top: 0.2rem;
+}
+
+.bind-card .bindcard-popup .popup-btn .btns {
+    margin: 0 auto;
+}
+
+
+/*消息页*/
+
+.msg-list {
+    width: 3.75rem;
+    height: 100%;
+}
+
+.msg-list ul li {
+    width: 3.43rem;
+    padding: 0.1rem 0.16rem 0.15rem;
+    margin-bottom: 0.08rem;
+    background-color: #ffffff;
+    box-shadow: 0 0.5px 0 0 #d0d5df, 0 -0.5px 0 0 #d0d5df;
+}
+
+.msg-time {
+    width: 100%;
+    font-size: .13rem;
+    color: #adb8ce;
+}
+
+.msg-con {
+    width: 100%;
+    margin-top: 0.08rem;
+    font-size: .16rem;
+    line-height: 0.24rem;
+}
+
+
+/*公司信息页*/
+
+.com-info-hd {
+    width: 3.75rem;
+    height: 1.76rem;
+    background-image: linear-gradient(327deg, #2c97f0, #1b62c5 68%, #1b61c4 69%, #1550b6 91%, #1550b6 91%, #1550b6 91%, #1550b6 91%, #1349b0);
+}
+
+.com-top,
+.com-detail {
+    background: none;
+}
+
+.icon-phone {
+    display: inline-block;
+    width: 0.11rem;
+    height: 0.16rem;
+    margin: 0 0.03rem 0 0.2rem;
+    background: url(../img/icon-iphone.png) no-repeat;
+    background-size: contain;
+    vertical-align: -0.02rem;
+}
+
+.com-info-bd {
+    width: 3.06rem;
+    height: 4.43rem;
+    padding: 0 0.34rem;
+    margin-top: 0.08rem;
+    background: #fff url(../img) 0 0 no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.com-info-bd .icon-bg {
+    display: block;
+    width: 0.56rem;
+    height: 0.24rem;
+    background: url(../img/oval-5.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    margin-left: -0.26rem;
+    top: -0.02rem;
+}
+
+.com-info-bd .com-info-bd-top {
+    padding-top: 0.52rem;
+    height: 0.8rem;
+    border-bottom: solid 0.5px #d0d5df;
+    font-size: .16rem;
+}
+
+.com-code,
+.com-staff {
+    padding-left: 0.2rem;
+}
+
+.com-code {
+    background: url(../img/icon-code.png) left center no-repeat;
+    background-size: 0.15rem 0.12rem;
+}
+
+.com-staff {
+    margin-top: 0.2rem;
+    background: url(../img/combined-shape.png) left center no-repeat;
+    background-size: 0.17rem 0.16rem;
+}
+
+.com-info-bd .com-info-bd-btm {
+    height: 1.05rem;
+    padding-top: 0.27rem;
+    font-size: .16rem;
+}
+
+.com-info-bd-btm dt {
+    padding-left: 0.2rem;
+    margin-bottom: 0.3rem;
+    background: url(../img/icon-commission.png) left center no-repeat;
+    background-size: 0.15rem 0.12rem;
+}
+
+.com-info-bd-btm dd {
+    width: 50%;
+    float: left;
+    margin-bottom: 0.2rem;
+}
+
+.direction {
+    width: 3.41rem;
+    padding: 0.22rem 0.18rem 0.15rem 0.16rem;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.dic-hd {
+    height: 0.3rem;
+    font-size: .16rem;
+    position: relative;
+}
+
+
+/*账户余额页面*/
+
+.acc-balance {
+    width: 3.75rem;
+}
+
+.acc-balance .balance-in {
+    width: 3.75rem;
+    height: 1.08rem;
+    background: #133c8b;
+    text-align: center;
+}
+
+.acc-balance .balance-in p {
+    width: 100%;
+    font-size: .13rem;
+    color: #adb8ce;
+}
+
+.acc-balance .balance-in p.balance-amt {
+    width: 100%;
+    height: 0.6rem;
+    font-size: .36rem;
+    line-height: 0.6rem;
+    color: #fff;
+    overflow: hidden;
+}
+
+.acc-balance .balance-list {
+    width: 3.75rem;
+    background: #FFF;
+    overflow: hidden;
+}
+
+.acc-balance .balance-list .hd .balance-nav {
+    width: 3.75rem;
+    height: 0.5rem;
+    border-bottom: solid 1px #C2CADB;
+}
+
+.acc-balance .balance-list .hd .balance-nav li {
+    width: 1.85rem;
+    height: 0.5rem;
+    float: left;
+    font-size: .16rem;
+    line-height: 0.5rem;
+    text-align: center;
+    color: #adb8ce;
+    position: relative;
+}
+
+.acc-balance .balance-list .hd .balance-nav li.on {
+    color: #5a667c;
+}
+
+.acc-balance .balance-list .hd .balance-nav li::after {
+    content: '';
+    display: none;
+    width: 0.12rem;
+    height: 0.12rem;
+    background: #fff url(../img/li-arrow.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    margin-left: -0.08rem;
+    bottom: -0.06rem;
+}
+
+.acc-balance .balance-list .hd .balance-nav li.on::after {
+    display: block;
+}
+
+.acc-balance .balance-list .income {
+    width: 3.45rem;
+    padding: 0 0 0 0.15rem;
+}
+
+.acc-balance .balance-list .balance-info dl {
+    width: 100%;
+    line-height: 0.4rem;
+}
+
+.acc-balance .balance-list .balance-info dl dt {
+    font-size: .15rem;
+    color: #adb8ce;
+}
+
+.acc-balance .balance-list .balance-info dl dd {
+    font-size: .13rem;
+}
+
+.acc-balance .balance-list .balance-info dl span{
+    display: inline-block;
+}
+.acc-balance .balance-list .balance-info dl .amt-dl{
+    width: 1.13rem;
+}
+.acc-balance .balance-list .balance-info dl .time-dl{
+    width: 1.6rem;
+}
+.acc-balance .balance-list .balance-info dl .type-dl{
+    width: 0.6rem;
+}
+
+
+/*提现页面*/
+
+.cash .btns {
+    margin: 1.4rem auto 0;
+}
+
+.cash .cash-tip {
+    width: 2.9rem;
+    height: 0.16rem;
+    margin-top: 0.14rem;
+    font-size: 0.12rem;
+}
+.cash select {
+    width: 2.9rem;
+    height: 0.42rem;
+    background-color: #f6f7f9;
+    border-radius: 2px;
+    font-size: 0.17rem;
+    color: #ADB8CE;
+    padding-left: 0.1rem;
+}
+
+/*绑卡页*/
+
+.subm-result .card .card-hd {
+    background: url("../img/card.png") no-repeat;
+    background-size: contain;
+}
+
+.subm-result .card .sbm-rlt-info.card-info {
+    width: 2rem;
+}
+
+.bind-card .bind-card-tip {
+    width: 2.9rem;
+    height: 0.42rem;
+    margin-bottom: 0.05rem;
+    line-height: 0.42rem;
+    border-radius: 2px;
+    font-size: 0.16rem;
+}
+
+.bind-card .radio-btn {
+    margin-top: 0.8rem;
+}
+
+.mycard {
+    width: 3.75rem;
+    padding-top: 0.4rem;
+}
+
+.mycard .mycard-info {
+    width: 3.25rem;
+    height: 0.56rem;
+    padding: 0.15rem 0 0 0.5rem;
+    margin-bottom: 0.24rem;
+    background: url(../img/cardbg.png) no-repeat;
+    background-size: contain;
+}
+
+.mycard .mycard-info a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.mycard .mycard-info p {
+    font-size: 0.13rem;
+    color: #fff;
+}
+
+.mycard .mycard-info p.card-num {
+    font-size: 0.19rem;
+}
+
+.mycard .add-card {
+    width: 3.15rem;
+    height: 0.50rem;
+    margin: 0 auto;
+    border: dotted 1px #339df5;
+    background: url(../img/jia.png) 0.92rem 0.18rem no-repeat;
+    background-size: 0.15rem 0.16rem;
+}
+
+.mycard .add-card a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0.17rem;
+    line-height: 0.5rem;
+    text-align: center;
+}
+
+
+/**设置页**/
+
+.set {
+    width: 3.75rem;
+    margin-top: 0.08rem;
+}
+
+.set ul {
+    width: 3.75rem;
+    background: #fff;
+}
+
+.set ul li {
+    width: 3.43rem;
+    height: 0.44rem;
+    padding: 0 0.16rem;
+    box-shadow: 0 0.5px 0 0 #d0d5df, 0 -0.5px 0 0 #d0d5df;
+    line-height: 0.44rem;
+    font-size: 0.16rem;
+    position: relative;
+}
+
+.set ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #5a667c;
+}
+
+.set ul li span {
+    display: inline-block;
+    float: right;
+    color: #adb8ce;
+}
+
+.set ul li span.tel-phone {
+    margin-right: 0.13rem;
+}
+
+.set ul li span.on-off {
+    width: 0.46rem;
+    height: 0.26rem;
+    border-radius: 0.14rem;
+    background: #339df5;
+    margin-top: 0.09rem;
+    position: relative;
+}
+
+.set ul li .on-off .onoff-btn {
+    display: block;
+    width: 0.24rem;
+    height: 0.24rem;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);
+    position: absolute;
+    top: 0.01rem;
+    right: 0;
+}
+
+.set ul li .on-off.cur {
+    background: #D0D5DF;
+}
+
+.set .set-arrow {
+    display: block;
+    width: 0.06rem;
+    height: 0.12rem;
+    background: url(../img/staff-arrow.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.05rem;
+    right: 0.18rem;
+}
+
+.set .exit-btn {
+    width: 3.43rem;
+    margin: 50% auto 0.3rem;
+}
+
+
+/**帮助与反馈页**/
+
+.feedback {
+    width: 2.9rem;
+    padding: 0.4rem 0.43rem 0 0.42rem;
+}
+
+.feedback .feedback-info {
+    width: 2.9rem;
+    min-height: 1.58rem;
+    margin-bottom: 0.8rem;
+}
+
+.feedback .feedback-info textarea {
+    width: 2.6rem;
+    min-height: 1.28rem;
+    padding: 0.15rem;
+    resize: none;
+    outline: none;
+    color: #5a667c;
+    font-size: 0.16rem;
+}
+
+
+/*修改手机号*/
+
+.change-phone .btns {
+    margin-top: 0.8rem;
+}
+
+
+/*修改密码*/
+
+.change-pwd .btns {
+    margin-top: 0.8rem;
+}
+.change-pwd #btn {
+    font-size: 0.16rem;
+    color: #FFFFFF;
+}
+
+/*佣金说明页（确认）*/
+
+.comm-direction {
+    width: 3.3rem;
+    padding: 0.3rem 0.22rem 0.3rem 0.23rem;
+    background: #fff;
+}
+
+.comm-direction .popup-txt {
+    line-height: 0.3rem;
+    font-size: 0.16rem;
+    line-height: 0.3rem;
+}
+
+.comm-direction .comm-ratio {
+    width: 3rem;
+    font-size: 0.16rem;
+    line-height: 0.3rem;
+    margin: 0.15rem 0 0.4rem;
+}
+
+.comm-direction .comm-ratio .comm-ratio-num {
+    display: inline-block;
+    width: 2.3rem;
+    height: 0.3rem;
+    font-size: 0.16rem;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 2px;
+    color: #5a667c;
+}
+
+.comm-direction .comm-ratio .comm-ratioc span {
+    color: #adb8ce;
+    background: #f2f2f2;
+}
+
+.comm-direction .comm-ratio .comm-ratioc {
+    margin-top: 0.25rem;
+}
+
+.comm-direction .btns {
+    margin: 0.6rem auto 0;
+}

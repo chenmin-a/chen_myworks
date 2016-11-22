@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+    <!--申明当前页面的编码集-->
+    <meta charset="UTF-8">
+    <!--网页标题-->
+    <title>易催催</title>
+    <!--网页关键词-->
+    <meta name="keywords" content="易催催" />
+    <!--网页描述-->
+    <meta name="description" content="" />
+    <!--适配当前屏幕-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!--禁止自动识别电话号码-->
+    <meta name="format-detection" content="telephone=no" />
+    <!--禁止自动识别邮箱-->
+    <meta content="email=no" name="format-detection" />
+    <!--iphone中safari私有meta标签,允许全屏模式浏览,隐藏浏览器导航栏-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!--iphone中safari顶端的状态条的样式black(黑色)-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/details.css"/>
+    <link rel="stylesheet" href="css/details2.css"/>
+    <script>
+        (function (designW) {
+            var prevScreenW = null;
+
+            function resize() {
+                var screenW = window.innerWidth;
+                if (prevScreenW == screenW) {
+                    return
+                } else {
+                    prevScreenW = screenW
+                }
+                document.documentElement.style.fontSize = 100 * screenW / designW + "px"
+            }
+
+            window.onresize = function () {
+                resize()
+            };
+            resize();
+            window.onload = function () {
+                resize()
+            }
+        })(375);
+    </script>
+</head>
+<body>
+    <!--头部 B-->
+    <div class="head">
+        <div class="head-arr head-back fl"></div>
+        <div class="head-info fl">案子详情</div>
+        <div class="head-alter fr"><a href="visit.html"></a></div>
+    </div>
+    <!--头部 E-->
+
+    <!--案子完成状态 B-->
+    <div class="status">
+        <!--任务失败 B-->
+        <div class="fail">
+            <div class="fail-commission clearfix">
+                <div class="fail-commission-money fl">
+                    <div class="fail-commission-money-num">30000.00<span>元</span></div>
+                    <div class="fail-commission-money-info">预期可赚取佣金</div>
+                </div>
+                <div class="fail-commission-icon fr"></div>
+            </div>
+            <ul class="fail-other clearfix">
+                <li>
+                    <div>40<span>%</span></div>
+                    <div>佣金比例</div>
+                </li>
+                <li>
+                    <div>343900.00<span>元</span></div>
+                    <div>本案应还款</div>
+                </li>
+            </ul>
+            <div class="gary"></div>
+            <!--调用details页面样式-->
+            <div class="basic-visit">
+                <div class="basic-visit-top clearfix">
+                    <div class="basic-top-left fl">拜访信息</div>
+                    <div class="basic-top-right basic-rotate fr"></div>
+                </div>
+                <div class="basic-visit-bottom clearfix">
+                    <ul class="basic-visit-bottom-record">
+                        <li>
+                            <div><i></i> <span>2016.12.1</span><span>10:23</span></div>
+                            <div>借款人态度很强硬，不怕走法律程序</div>
+                        </li>
+                        <li>
+                            <div><i></i> <span>2016.12.1</span><span>10:23</span></div>
+                            <div>借款人态度很强硬，不怕走法律程序</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--任务失败 E-->
+    </div>
+    <!--案子完成状态 E-->
+</body>
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/home.js"></script>
+</html>

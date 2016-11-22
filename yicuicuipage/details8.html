@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <!--申明当前页面的编码集-->
+    <meta charset="UTF-8">
+    <!--网页标题-->
+    <title>易催催</title>
+    <!--网页关键词-->
+    <meta name="keywords" content="易催催" />
+    <!--网页描述-->
+    <meta name="description" content="" />
+    <!--适配当前屏幕-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!--禁止自动识别电话号码-->
+    <meta name="format-detection" content="telephone=no" />
+    <!--禁止自动识别邮箱-->
+    <meta content="email=no" name="format-detection" />
+    <!--iphone中safari私有meta标签,允许全屏模式浏览,隐藏浏览器导航栏-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!--iphone中safari顶端的状态条的样式black(黑色)-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/details.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/fault.css"/>
+    <script>
+        (function (designW) {
+            var prevScreenW = null;
+
+            function resize() {
+                var screenW = window.innerWidth;
+                if (prevScreenW == screenW) {
+                    return
+                } else {
+                    prevScreenW = screenW
+                }
+                document.documentElement.style.fontSize = 100 * screenW / designW + "px"
+            }
+
+            window.onresize = function () {
+                resize()
+            };
+            resize();
+            window.onload = function () {
+                resize()
+            }
+        })(375);
+    </script>
+</head>
+<body>
+    <!--头部 B-->
+    <div class="head">
+        <div class="head-arr head-back fl"></div>
+        <div class="head-info fl">案子详情</div>
+        <div class="head-home fr"><a href="pages/message.html"><i></i></a></div>
+    </div>
+    <!--头部 E-->
+
+    <!--佣金信息 B-->
+    <div class="commission">
+        <div class="commission-expected">
+            <div class="commission-expected-money">30000.00<span>元</span></div>
+            <div class="commission-expected-info">预期可赚佣金</div>
+        </div>
+        <div class="commission-scale">
+            <div class="commission-scale-num"><span>40<i>%</i></span><span>343900.00<i>元</i></span></div>
+            <div class="commission-scale-info"><span>最高佣金比例</span><span>本案应还款</span></div>
+            <div class="commission-scale-line"></div>
+        </div>
+        <div class="commission-date">
+            <div class="commission-date-one">本案有效期<span>30</span>天</div>
+        </div>
+    </div>
+    <!--佣金信息 E-->
+
+    <!--基本信息 B-->
+    <div class="basic">
+        <!--基本信息-->
+        <div class="basic-info">
+            <div class="basic-info-top clearfix">
+                <div class="basic-top-left fl">基本信息</div>
+                <div class="basic-top-right basic-rotate fr"></div>
+            </div>
+            <div class="basic-info-bottom clearfix">
+                <ul class="basic-info-bottom-left fl">
+                    <li><span>借款人</span><span>钱先生</span></li>
+                    <li><span>借款平台</span><span>上海市易催催网络科技有限公司</span></li>
+                    <li><span>逾期天数</span><span><i>360</i>天</span></li>
+                    <li><span>逾期开始日期</span><span>2014年4月5号</span></li>
+                </ul>
+            </div>
+        </div>
+        <!--借款信息-->
+        <div class="basic-borrow borrow">
+            <div class="basic-info-top clearfix">
+                <div class="basic-top-left fl">借款信息</div>
+                <div class="basic-top-right basic-rotate fr"></div>
+            </div>
+            <ul class="basic-info-bottom">
+                <li><span>合同金额：</span><span>66000</span>元</li>
+                <li><span>合同期数：</span><span>12</span>期</li>
+                <li><span>放款金额：</span><span>50000</span>元</li>
+            </ul>
+        </div>
+        <!--佣金信息-->
+        <div class="basic-explain">
+            <div class="basic-explain-top clearfix">
+                <div class="basic-top-left fl">佣金说明</div>
+                <div class="basic-top-right basic-rotate fr"></div>
+            </div>
+            <div class="basic-explain-bottom clearfix">
+                <h2>（以下基数为还款金额）</h2>
+                <ul class="basic-explain-bottom-left fl clearfix">
+                    <li>还款100%</li>
+                    <li>还款80%-99%</li>
+                </ul>
+                <ul class="basic-explain-bottom-right fl clearfix">
+                    <li>40%</li>
+                    <li>30%</li>
+                </ul>
+            </div>
+        </div>
+        <!--公司佣金分配-->
+        <div class="basic-company">
+            <div class="basic-company-top clearfix">
+                <div class="basic-top-left fl">公司分配佣金(以可赚佣金为基准)</div>
+                <div class="basic-top-right basic-rotate fr"></div>
+            </div>
+            <div class="basic-company-bottom clearfix">
+                <ul>
+                    <li><span>公司</span><span>员工</span></li>
+                    <li><span>25%</span><span>75%</span></li>
+                </ul>
+            </div>
+        </div>
+        <!--罚息信息-->
+        <div class="basic-interest interest clearfix">
+            <div class="basic-info-top clearfix">
+                <div class="basic-top-left fl">罚息信息</div>
+                <div class="basic-top-right basic-rotate fr"></div>
+            </div>
+            <div class="basic-info-bottom">
+                无罚息
+            </div>
+        </div>
+        <!--联系方式-->
+        <div class="basic-tel tel clearfix">
+            <div class="basic-info-top clearfix">
+                <div class="basic-top-left fl">联系方式</div>
+                <div class="basic-top-right basic-rotate fr"></div>
+            </div>
+            <div class="basic-info-bottom">
+                <ul>
+                    <li>
+                        <div>电话</div>
+                        <div>地址</div>
+                    </li>
+                    <li>
+                        <div>18096632275</div>
+                        <div>北京市海淀区中关村大街11号中关村E世界10层A座1017B</div>
+                        <div><i></i> 查看地图</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--联系人-->
+        <div class="basic-contact contact clearfix">
+            <div class="basic-info-top clearfix">
+                <div class="basic-top-left fl">联系人信息</div>
+                <div class="basic-top-right basic-rotate fr"></div>
+            </div>
+            <div class="basic-info-bottom">
+                <ul>
+                    <li><span>联系人：</span>钱小豪</li>
+                    <li><span>关　系：</span>兄弟</li>
+                    <li><span>电　话：</span>18096632271</li>
+                </ul>
+            </div>
+        </div>
+        <!--单位/学校信息-->
+        <div class="basic-work work clearfix">
+            <div class="basic-info-top clearfix">
+                <div class="basic-top-left fl">单位/或学校信息</div>
+                <div class="basic-top-right basic-rotate fr"></div>
+            </div>
+            <ul class="basic-info-bottom">
+                <li><span>单位/学校：</span>北京大学</li>
+                <li><span>地址：</span>北京市</li>
+            </ul>
+        </div>
+        <input type="button" value="分配任务" class="task-btn"/>
+    </div>
+    <!--基本信息 E-->
+
+    <!-- 分配任务弹窗 B -->
+    <div class="mask" id="task-mask">
+        <div class="popup task-popup" style="display: block">
+            <form id="form">
+                <div class="form popup-bd">
+                    <div class="radio-btn check-btn">
+                        <input type="button" name="a" id="a" class="origin-input">
+                        <label for="a">员工一</label>
+                    </div>
+                    <div class="radio-btn check-btn">
+                        <input type="button" name="b" id="b" class="origin-input">
+                        <label for="b">员工二</label>
+                    </div>
+                    <div class="radio-btn check-btn">
+                        <input type="button" name="c" id="c" class="origin-input">
+                        <label for="c">员工三</label>
+                    </div>
+                    <div class="radio-btn check-btn">
+                        <input type="button" name="d" id="d" class="origin-input">
+                        <label for="d">员工四</label>
+                    </div>
+                    <div class="radio-btn check-btn">
+                        <input type="button" name="e" id="e" class="origin-input">
+                        <label for="e">员工五</label>
+                    </div>
+                    <div class="radio-btn check-btn">
+                        <input type="button" name="f" id="f" class="origin-input">
+                        <label for="f">员工六</label>
+                    </div>
+                </div>
+                <div class="popup-btn clearfix">
+                    <div class="rlt-btn fl">
+                        <a href="javascript:;">取消</a>
+                    </div>
+                    <div class="btns dis-btn fl " id="btn">
+                        <a href="javascript:;">确认</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- 分配任务弹窗 E -->
+
+    <!--错误提示弹窗 B-->
+    <div class="fault">
+        <div class="fault-txt">
+            <div class="fault-txt-info">手机号码格式错误</div>
+            <input type="button" value="确认"/>
+        </div>
+    </div>
+    <!--错误提示弹窗 E-->
+</body>
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/swiper-3.4.0.min.js"></script>
+<script src="js/home.js"></script>
+<script src="js/popup.js"></script>
+<script src="js/details8Ajax.js"></script>
+</html>

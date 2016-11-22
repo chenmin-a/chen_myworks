@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>易催催</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<script type="text/javascript" src='../js/jquery-1.7.1.min.js'></script>
+	<script type="text/javascript" src='../js/page.js'></script>
+	<script type="text/javascript">
+	(function(designW){var prevScreenW = null;function resize(){var screenW = window.innerWidth;if (prevScreenW == screenW){return}else{prevScreenW = screenW}document.documentElement.style.fontSize = 100 * screenW / designW + "px"}window.onresize = function(){resize()};resize();window.onload = function(){resize()}})(375);
+	</script>
+
+</head>
+<body>
+	<div class="wrap">
+	<!-- 顶部 -->
+		<div class="top">
+			<div class="top-in">
+				<div class="top-l fl head-back"><a href="javascript:;"></a></div>
+				设置
+				<div class="top-r fr"><a href="_index.html"></a></div>
+			</div>
+		</div>
+		<div class="set">
+			<ul>
+				<li><a href="javascript:;">检测新版本<span>v1.0.0</span></a></li>
+				<li><a href="changePhone.html">手机号<span class="tel-phone">13900138422</span><i class="set-arrow"></i></a></li>
+				<li>消息提醒<span class="on-off" id="onoff"><i class="onoff-btn"></i></span></li>
+				<li><a href="feedback.html">帮助与反馈<i class="set-arrow"></i></a></li>
+				<li><a href="changePwd.html">修改密码<i class="set-arrow"></i></a></li>
+			</ul>
+			<div class="rlt-btn exit-btn">
+				<a href="login.html">退出登录</a>
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>

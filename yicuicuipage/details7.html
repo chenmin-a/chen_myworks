@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <!--申明当前页面的编码集-->
+    <meta charset="UTF-8">
+    <!--网页标题-->
+    <title>易催催</title>
+    <!--网页关键词-->
+    <meta name="keywords" content="易催催" />
+    <!--网页描述-->
+    <meta name="description" content="" />
+    <!--适配当前屏幕-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!--禁止自动识别电话号码-->
+    <meta name="format-detection" content="telephone=no" />
+    <!--禁止自动识别邮箱-->
+    <meta content="email=no" name="format-detection" />
+    <!--iphone中safari私有meta标签,允许全屏模式浏览,隐藏浏览器导航栏-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!--iphone中safari顶端的状态条的样式black(黑色)-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/details.css"/>
+    <script>
+        (function (designW) {
+            var prevScreenW = null;
+
+            function resize() {
+                var screenW = window.innerWidth;
+                if (prevScreenW == screenW) {
+                    return
+                } else {
+                    prevScreenW = screenW
+                }
+                document.documentElement.style.fontSize = 100 * screenW / designW + "px"
+            }
+
+            window.onresize = function () {
+                resize()
+            };
+            resize();
+            window.onload = function () {
+                resize()
+            }
+        })(375);
+    </script>
+</head>
+<body>
+    <!--头部 B-->
+    <div class="head">
+        <div class="head-arr head-back fl"></div>
+        <div class="head-info fl">案子详情</div>
+        <div class="head-home fr"><a href="pages/message.html"><i></i></a></div>
+    </div>
+    <!--头部 E-->
+
+    <!--佣金信息 B-->
+    <div class="commission">
+        <div class="commission-expected">
+            <div class="commission-expected-money">30000.00<span>元</span></div>
+            <div class="commission-expected-info">预期可赚佣金</div>
+        </div>
+        <div class="commission-scale">
+            <div class="commission-scale-num"><span>40<i>%</i></span><span>343900.00<i>元</i></span></div>
+            <div class="commission-scale-info"><span>最高佣金比例</span><span>本案应还款</span></div>
+            <div class="commission-scale-line"></div>
+        </div>
+        <div class="commission-date">
+            <div class="commission-date-one">本案有效期<span>30</span>天</div>
+        </div>
+    </div>
+    <!--佣金信息 E-->
+
+    <!--基本信息 B-->
+    <div class="basic">
+        <!--基本信息-->
+        <div class="basic-info">
+            <div class="basic-info-top clearfix">
+                <div class="basic-top-left fl">基本信息</div>
+                <div class="basic-top-right basic-rotate fr"></div>
+            </div>
+            <div class="basic-info-bottom clearfix">
+                <ul class="basic-info-bottom-left fl">
+                    <li><span>借款人</span><span>钱先生</span></li>
+                    <li><span>借款平台</span><span>上海市易催催网络科技有限公司</span></li>
+                    <li><span>逾期天数</span><span><i>360</i>天</span></li>
+                    <li><span>逾期开始日期</span><span>2014年4月5号</span></li>
+                </ul>
+            </div>
+        </div>
+        <!--借款信息-->
+        <div class="basic-borrow borrow">
+            <div class="basic-info-top clearfix">
+                <div class="basic-top-left fl">借款信息</div>
+                <div class="basic-top-right basic-rotate fr"></div>
+            </div>
+            <ul class="basic-info-bottom">
+                <li><span>合同金额：</span><span>66000</span>元</li>
+                <li><span>合同期数：</span><span>12</span>期</li>
+                <li><span>放款金额：</span><span>50000</span>元</li>
+            </ul>
+        </div>
+        <!--佣金信息-->
+        <div class="basic-explain">
+            <div class="basic-explain-top clearfix">
+                <div class="basic-top-left fl">佣金说明</div>
+                <div class="basic-top-right basic-rotate fr"></div>
+            </div>
+            <div class="basic-explain-bottom clearfix">
+                <h2>（以下基数为还款金额）</h2>
+                <ul class="basic-explain-bottom-left fl clearfix">
+                    <li>还款100%</li>
+                    <li>还款80%-99%</li>
+                </ul>
+                <ul class="basic-explain-bottom-right fl clearfix">
+                    <li>40%</li>
+                    <li>30%</li>
+                </ul>
+            </div>
+        </div>
+        <!--公司佣金分配-->
+        <div class="basic-company">
+            <div class="basic-company-top clearfix">
+                <div class="basic-top-left fl">公司分配佣金(以可赚佣金为基准)</div>
+                <div class="basic-top-right basic-rotate fr"></div>
+            </div>
+            <div class="basic-company-bottom clearfix">
+                <ul>
+                    <li><span>公司</span><span>员工</span></li>
+                    <li><span>25%</span><span>75%</span></li>
+                </ul>
+            </div>
+        </div>
+        <!--罚息信息-->
+        <div class="basic-interest interest clearfix">
+            <div class="basic-info-top clearfix">
+                <div class="basic-top-left fl">罚息信息</div>
+                <div class="basic-top-right basic-rotate fr"></div>
+            </div>
+            <div class="basic-info-bottom">
+                无罚息
+            </div>
+        </div>
+        <!--联系方式-->
+        <div class="basic-tel tel clearfix">
+            <div class="basic-info-top clearfix">
+                <div class="basic-top-left fl">联系方式</div>
+                <div class="basic-top-right basic-rotate fr"></div>
+            </div>
+            <div class="basic-info-bottom">
+                <ul>
+                    <li>
+                        <div>电话</div>
+                        <div>地址</div>
+                    </li>
+                    <li>
+                        <div>18096632275</div>
+                        <div>北京市海淀区中关村大街11号中关村E世界10层A座1017B</div>
+                        <div><i></i> 查看地图</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="basic-btn">
+            <input type="button" value="拒绝接单" class="basic-btn-left basic-btn-left1"/>
+            <input type="button" value="确定接单" class="basic-btn-right basic-btn-right1"/>
+        </div>
+    </div>
+    <!--基本信息 E-->
+
+    <!--接单弹窗 B-->
+    <div class="popup">
+        <!--确定接单 B-->
+        <div class="popup-yes">
+            <div class="popup-yes-input">
+                <h2>请先确认员工佣金比例</h2>
+                <div>员工：<input type="tel" value="30" class="popup-yes-input-person"/> %</div>
+                <div>公司：<input type="text" value="70" class="popup-yes-input-company" disabled="disabled"/> %</div>
+            </div>
+            <div class="popup-yes-info">
+                接单之后需要在规定的时间之内完成，如果无法完成会影响你的完成率和信用值哦~
+            </div>
+            <div class="popup-btn clearfix">
+                <input type="button" value="考虑一下" class="popup-btn-left fl"/>
+                <input type="button" value="确定接单" class="popup-btn-right popup-btn-right3 fr"/>
+            </div>
+        </div>
+        <!--确定接单 E-->
+        <!--拒绝接单 B-->
+        <div class="popup-no">
+            <div class="popup-no-info">
+                <ul>
+                    <li class="clearfix">
+                        <div>预期可赚佣金</div>
+                        <div>30000.00元</div>
+                    </li>
+                    <li class="clearfix">
+                        <div>最高佣金比例</div>
+                        <div>40%</div>
+                    </li>
+                    <li class="clearfix">
+                        <div>本案应还款</div>
+                        <div>394023.00元</div>
+                    </li>
+                </ul>
+                <div class="popup-no-info-text">
+                    <p>你确定要拒绝接单吗？</p>
+                    <p>拒绝接单还会影响你的信用值哦</p>
+                </div>
+            </div>
+            <div class="popup-btn clearfix">
+                <input type="button" value="考虑一下" class="popup-btn-left fl"/>
+                <input type="button" value="确定拒单" class="popup-btn-right popup-btn-right5 fr"/>
+            </div>
+        </div>
+        <!--拒绝接单 E-->
+    </div>
+    <!--接单弹窗 E-->
+</body>
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/home.js"></script>
+<script>
+    //员工和公司佣金分配 B
+    var company = document.querySelector(".popup-yes-input-company");
+    var person = document.querySelector(".popup-yes-input-person");
+    person.onkeyup = function (){
+        if(person.value > 100){
+            person.value = "";
+        }else{
+            company.value = 100 - person.value;
+        }
+
+    }
+    //员工和公司佣金分配 E
+</script>
+</html>
